@@ -1,0 +1,58 @@
+/* Geral */
+.estrutura {
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) 1fr;
+  grid-template-areas: 
+  "header header header"
+  "hero hero hero"
+  "content content content"
+  "footer footer footer"
+  ;
+}
+
+body {
+  background: #090808;
+}
+
+/* Header */
+.header {
+  grid-area: header;
+  background: rgba(0, 0, 0, .5);
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.logo {
+  max-width: 150px;
+  padding-left: 231px;
+}
+
+.logo_a {
+  max-width: 150px;
+}
+
+.header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 231px;
+}
+
+.header nav a {
+  display: block;
+  padding: 10px;
+  color: white;
+  font-size: 18px;
+  font-family: 'Cardo', serif;
+  transition: .1s;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+.header li + li {
+  margin-left: 20px;
+}
+
