@@ -309,3 +309,52 @@ h1 {
   grid-area: local;
   display: block;
 }
+
+/* Contato */
+
+.contato_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "foto social"
+  ;
+  gap: 20px;
+}
+
+.contato_grid img:nth-child(1) {
+  grid-area: foto;
+}
+
+.social {
+  grid-area: social;
+}
+
+.social h2 {
+  font-size: 18px;
+  font-family: 'Archivo';
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.social p {
+  font-size: 16px;
+  font-family: 'Archivo';
+  line-height: 30px;
+}
+
+.social img + p {
+  display: inline-flex;
+}
+
+.social ul li {
+  position: relative;
+  margin: 15px 0;
+}
+
+.social ul li p {
+  position: absolute;
+  top: -4px;
+  left: 30px;
+}
+
