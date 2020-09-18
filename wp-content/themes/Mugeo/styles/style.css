@@ -1,7 +1,7 @@
 /* Geral */
 .estrutura {
   display: grid;
-  grid-template-columns: minmax(160px, 1fr) 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: 
   "header header header"
   "hero hero hero"
@@ -19,11 +19,10 @@ body {
 .header {
   grid-area: header;
   background: rgba(0, 0, 0, .5);
-  padding: 15px;
+  padding: 15px 15px 15px 0;
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
-  z-index: 1;
 }
 
 .logo {
@@ -64,10 +63,12 @@ body {
 
 .hero{
   grid-area: hero;
+  display: block;
+  margin: 0 auto;
   background-size: 1920px;
   background-repeat: no-repeat;
   font-family: 'Cardo', serif;
-  width: 100%;
+  width: 66vw;
   height: 700px;
   color: #F1F3F8;
 }
@@ -101,19 +102,13 @@ h1 {
 }
 
 .title {
-  position: absolute;
-  top: 180px;
-  left: 250px;
+  margin: 100px auto 20px;
 }
 
 /* Slider do Hero */
 
 .slider-wrapper {
   display: flex;
-  position: absolute;
-  width: 840px;
-  top: 500px;
-  left: 250px;
 }
 
 .slider-wrapper img:nth-child(1) {
@@ -137,7 +132,7 @@ h1 {
 }
 
 .slider-wrapper div + div {
-  margin-left: 30px;
+  margin-left: 1.5%;
 }
 
 /* Conteúdo */
