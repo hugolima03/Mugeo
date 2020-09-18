@@ -252,7 +252,7 @@ h1 {
 }
 
 .blog-button:hover {
-  box-shadow: 0 6px 6px black;
+  box-shadow: 0px 0 px 6px black;
 }
 
 .blog-button p {
@@ -261,4 +261,51 @@ h1 {
   font-family: 'Archivo';
   font-size: 14px;
   letter-spacing: 1.5px;
+}
+
+/* Planeje sua visita */
+
+.visita_grid {
+  margin-top: -25px;
+  display: grid;
+  grid-template-areas: 
+  "foto foto"
+  "horario local"
+  ;
+}
+
+.visita_grid img{
+  grid-area: foto;
+  margin-bottom: 50px; 
+}
+
+.horario {
+  grid-area: horario;
+  display: block;
+  position: relative;
+}
+
+.horario h2, .local h2 {
+  font-size: 18px;
+  font-family: 'Archivo';
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 40px;
+}
+
+.horario p, .local p{
+  font-size: 16px;
+  font-family: 'Archivo';
+  line-height: 40px;
+}
+
+.horario p + p {
+  position: absolute;
+  top: 60px;
+  left: 300px;
+}
+
+.local {
+  grid-area: local;
+  display: block;
 }
