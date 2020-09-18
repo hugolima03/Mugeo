@@ -142,7 +142,128 @@ h1 {
 
 /* Conteúdo */
 
-.content {
+.main {
   background-color: #F1F3F8;
   grid-area: content;
+  padding-left: 250px;
+}
+
+.main h3 {
+  margin-top: 70px; 
+  font-size: 28px;
+  font-weight: 700;
+  font-family: 'Archivo';
+}
+
+.main .linha_preta {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 8px; 
+  width: 80%;
+  height: 2px;
+  padding-bottom: 48px;
+}
+
+/* Notícias relevantes */
+
+.main article {
+  width: 1000px;
+  display: grid;
+  grid-template-rows: 40px 20px 96px;
+  grid-template-areas: 
+  "foto article-title"
+  "foto article-label"
+  "foto article-content"
+  "foto article-button"
+  "blog blog"
+  ;
+  column-gap: 10px;
+}
+
+.main article:not(:nth-child(3)) {
+  margin-top: 35px;
+
+}
+
+.main article img {
+  margin-left: -8.5px;
+  grid-area: foto;
+  box-shadow: 0px 3px 6 rgba(0, 0, 0, 0.4);
+}
+
+.main article h4 {
+  padding-top: 10px;
+  font-size: 18px;
+  font-family: 'Archivo';
+  line-height: 20px;
+  grid-area: article-title;
+}
+
+.main article label {
+  font-size: 14px;
+  font-family: 'Archivo';
+  grid-area: article-label;
+  margin: 0px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.main .article-content {
+  grid-area: article-content;
+  font-size: 16px;
+  font-family: 'Archivo';
+}
+
+.main article .article-button {
+  display: flex;
+  background-color: #1E1D18;
+  border-radius: 1px;
+  width: 160px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.main article .article-button:hover {
+  text-decoration: underline;
+  text-decoration-color: #F1F3F8;
+  width: 165px;
+}
+
+.main article .article-button p {
+  margin: 0 auto;
+  align-self: center;
+  font-size: 14px;
+  font-family: 'Archivo';
+  font-weight: 700;
+  color: #F1F3F8;
+}
+
+#line_with_opacity {
+  width: 1000px;
+}
+
+.blog-button {
+  grid-area: blog;
+  display: flex;
+  margin: 0 27.5vw;
+  width: 200px;
+  height: 45px;
+  background: transparent;
+  border: 2px solid #1E1D18;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 20px;
+}
+
+.blog-button:hover {
+  box-shadow: 0 6px 6px black;
+}
+
+.blog-button p {
+  align-self: center;
+  margin: 0 auto;
+  font-family: 'Archivo';
+  font-size: 14px;
+  letter-spacing: 1.5px;
 }
