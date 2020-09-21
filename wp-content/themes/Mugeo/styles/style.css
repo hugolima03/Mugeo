@@ -277,7 +277,7 @@ h1 {
 .visita_grid {
   margin-top: -25px;
   display: grid;
-  grid-template-columns: 1.4fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   grid-template-areas: 
   "foto foto"
   "horario local"
@@ -496,7 +496,7 @@ h1 {
   /* Content */
   .content_grid {
     width: 720px;
-    background-color: red;
+    
   }
 
   .main article {
@@ -516,15 +516,35 @@ h1 {
     font-size: 14px;
   }
 
+  /* Contato */
+  .contato_img {
+    width: 510px;
+  }
+
   /* Footer */
   .footer_grid {
-    background: red;
     grid-template-columns: 1fr;
+    gap: 20px;
     grid-template-areas: 
     "column1"
     "column2"
     "column3"
     "column4"
     ;
+    text-align: center;
+  }
+
+  .footer div {
+    padding: 0px;
+  }
+
+  .footer_column_3 {
+    display: none;
+  }
+
+  .footer_grid div + div {
+    border-top: solid #F1F3F8 2px;
+    border-left: none;
+    padding-top: 10px;
   }
 }
