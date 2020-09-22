@@ -66,16 +66,16 @@ body {
   grid-area: hero;
   display: block;
   margin: 0 auto;
-  background-size: 1920px;
+  background-size: 100%;
   background-repeat: no-repeat;
   font-family: 'Cardo', serif;
-  width: 66vw;
+  width: 60%;
   height: 700px;
   color: #F1F3F8;
 }
 
 h1 {
-  font-size: 93px;
+  font-size: 5.8rem;
 }
 
 .hero p {
@@ -521,6 +521,49 @@ h1 {
     width: 510px;
   }
 
+  /* Header */
+  .header {
+    display: block;
+  }
+
+  .header div {
+    width: 150px;
+    margin: 0 auto;
+    
+  }
+
+  .header .nav {
+    margin: 0 auto;
+    width: 300px;
+    
+  }
+
+  .header nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-right: 0;
+  }
+
+  .header nav ul li{
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .header nav span {
+    color: wheat;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .header li + li {
+    margin-left: 8px;
+  }
+
+  .header .logo {
+    margin-left: 0px;
+  }
+
   /* Footer */
   .footer_grid {
     grid-template-columns: 1fr;
@@ -546,5 +589,20 @@ h1 {
     border-top: solid #F1F3F8 2px;
     border-left: none;
     padding-top: 10px;
+  }
+
+  /* Hero */
+
+  .hero {
+    text-align: center;
+    height: 500px;
+  }
+
+  .slider-wrapper {
+    display: none;
+  }
+
+  .linha_regular {
+    display: none;
   }
 }
