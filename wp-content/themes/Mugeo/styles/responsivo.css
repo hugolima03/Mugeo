@@ -72,6 +72,16 @@
     margin-left: 0px;
   }
 
+  /* Acervo */
+
+  .acervo-grid {
+    margin-top: 100px;
+  }
+
+  .input-wrapper input {
+    width: 150px;
+  }
+
   /* Footer */
   .footer_grid {
     grid-template-columns: 1fr;
@@ -210,5 +220,59 @@
 
   .contato_grid .contato_img {
     width: 100%;
+  }
+
+  /* Acervo */
+
+  .acervo-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .input-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "colecao"
+    "nome"
+    "button"
+    ;
+  }
+
+  .input-wrapper input {
+    margin: 0 auto;
+  }
+
+  .input-wrapper {
+    margin-top: 25px;
+    height: 300px;
+    margin-bottom: 25px;
+  }
+
+  .input-wrapper button {
+    margin: 0 auto;
+  }
+
+  .hero {
+    height: 100%;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+  /* Itens do acervo */
+  .acervo-grid {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  .acervo-item {
+    width: 250px;
+    height: 300px;
+    border-radius: 18px;
+    background: #fff;
+    margin-bottom: 10px;
+  }
+
+  .acervo-item img {
+    width: 250px;
   }
 }
