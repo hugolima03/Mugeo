@@ -1,0 +1,38 @@
+/* Blog Hero */
+.blog-hero {
+  width: 1050px;
+  margin: 25px auto;
+  grid-area: hero;
+  display: grid;
+  grid-template-rows: 80px auto;
+  gap: 20px;
+}
+
+.blog-hero img {
+  width: 670px;
+  grid-row: span 2;
+}
+
+.blog-hero h2 {
+  grid-column: 2;
+  font-family: 'Archivo';
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+}
+
+.blog-hero p {
+  grid-column: 2;
+  font-family: 'Archivo';
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+}
+
+/* Footer */
+.footer_grid {
+  grid-template-columns: 0.28fr 0.3fr 0.3fr;
+  grid-template-areas: 
+  "column1 column3 column4"
+  ;
+}
