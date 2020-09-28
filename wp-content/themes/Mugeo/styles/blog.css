@@ -22,11 +22,27 @@
 }
 
 .blog-hero p {
+  width: 300px;
   grid-column: 2;
   font-family: 'Archivo';
   font-size: 14px;
   line-height: 20px;
   color: white;
+}
+
+.blog-noticias-hero {
+  width: 1050px;
+  margin: 25px auto;
+  color: white;
+  grid-area: hero2;
+}
+
+.slider-wrapper {
+  margin-top: -40px;
+}
+
+.slider-wrapper img:nth-child(1) {
+  width: 290px;
 }
 
 /* Footer */
