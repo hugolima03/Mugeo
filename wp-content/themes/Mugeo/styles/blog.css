@@ -134,6 +134,10 @@ main {
   border: transparent;
 }
 
+.sidebar-component p {
+  font-family: 'Archivo';
+}
+
 .sidebar-item {
   display: flex;
   align-content: center;
@@ -145,6 +149,7 @@ main {
   font-family: 'Archivo';
   margin-left: 10px;
 }
+
 
 /* Footer */
 .footer_grid {
