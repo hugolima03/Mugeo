@@ -76,6 +76,7 @@
 
   .acervo-grid {
     margin-top: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .input-wrapper input {
