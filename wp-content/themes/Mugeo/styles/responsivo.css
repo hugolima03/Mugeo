@@ -146,6 +146,46 @@
     margin-bottom: 40px;
     width: 60%;
   }
+
+  /* Blog */
+
+  .blog-hero {
+    width: 440px;
+  }
+
+  .blog-hero img {
+    width: 420px;
+  }
+
+  .blog-hero h2 {
+    grid-column: 1;
+  }
+
+  .blog-hero p {
+    grid-column: 1;
+    /* text-align: center; */
+    width: 100%;
+  }
+
+  .blog-wrapper {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  /* Blog content */
+
+  .sidebar-component {
+    display: none;
+  }
+
+  .sidebar-wrapper {
+    display: none;
+  }
+
+  .post-wrapper {
+    width: 640px;
+    margin: 0 auto;
+  }
 }
 /* Smartphone */
 @media (max-width: 600px) {
@@ -156,7 +196,7 @@
 
   /* Hero */
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.5em;
   }
 
   .hero p {
@@ -280,7 +320,7 @@
   }
 
   .hero h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
   /* Itens do acervo */
   .acervo-grid {
@@ -319,5 +359,59 @@
     margin-left: 0;
     margin-top: 40px;
     margin-bottom: 40px;
+  }
+
+  /* Blog */
+
+  .post-wrapper {
+    width: 100%;
+  }
+
+  .blog-hero {
+    width: 100%;
+    justify-items: center;
+  }
+
+  .blog-hero img {
+    width: 320px;
+  }
+
+  .blog-hero h2 {
+    text-align: center;
+  }
+
+  .blog-hero p {
+    text-align: center;
+  }
+
+  /* Blog content */
+
+  .post {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .post img {
+    grid-row: span 4;
+  }
+
+  .post label {
+    grid-column: 1;
+  }
+
+  .post h3 {
+    grid-column: 1;
+    font-size: 18px;
+  }
+
+  .post p {
+    grid-column: 1;
+    font-size: 14px;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .post a {
+    grid-column: 1;
   }
 }
