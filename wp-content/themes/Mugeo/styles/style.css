@@ -11,6 +11,7 @@
   "footer footer footer"
   "copyright copyright copyright"
   ;
+  overflow: hidden;
 }
 
 body {
@@ -105,7 +106,7 @@ h1 {
 }
 
 .title {
-  margin: 100px auto 20px;
+  margin: 100px auto 120px;
 }
 
 /* Slider do Hero */

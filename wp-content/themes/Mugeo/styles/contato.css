@@ -17,6 +17,10 @@ body {
   margin-bottom: 40px;
 }
 
+.title {
+  margin: 100px auto 20px;
+}
+
 .linha_regular {
   width: 200px;
 }

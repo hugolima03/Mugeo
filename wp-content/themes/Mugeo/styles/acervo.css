@@ -16,6 +16,10 @@ body {
   background-image: url("../src/imgs/mugeo_hero.png");
 }
 
+.title {
+  margin: 100px auto 20px;
+}
+
 /* Acervo */
 .input-wrapper {
   margin-top: 75px;

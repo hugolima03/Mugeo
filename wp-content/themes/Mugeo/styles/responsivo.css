@@ -114,7 +114,7 @@
 
   .hero {
     text-align: center;
-    height: 500px;
+    /* height: 500px; */
   }
 
   .slider-wrapper {
@@ -175,12 +175,9 @@
 
   /* Blog content */
 
-  .sidebar-component {
-    display: none;
-  }
-
   .sidebar-wrapper {
-    display: none;
+    grid-row: -1;
+    margin: 0 20px;
   }
 
   .post-wrapper {
