@@ -31,13 +31,17 @@
 
     <div class="hero">
       <div class="title">
-        <p>UFRR</p> <img class="linha" src="src/imgs/line_small.png" alt="Linha">
-        <p>das 10:00 ás 18:00</p>
-        <h1>Acervo</h1>
-        <a href="acervo.html">Conheça o Acervo</a><img class="linha_regular" src="src/imgs/line_regular.png" alt="Linha">
+        <div data-anime="1200">
+          <p>UFRR</p> <img class="linha" src="src/imgs/line_small.png" alt="Linha">
+          <p>das 10:00 ás 18:00</p>
+        </div>
+        <h1 data-anime="800">Acervo</h1>
+        <div data-anime="1400">
+          <a href="acervo.html">Conheça o Acervo</a><img class="linha_regular" src="src/imgs/line_regular.png" alt="Linha">
+        </div>
       </div>
       
-      <div class="input-wrapper">
+      <div class="input-wrapper" data-anime="1800">
         <label for="">Coleção:</label>
         <input type="text" placeholder="Minerais">
         <label for="">Nome do espécime:</label>
@@ -46,7 +50,7 @@
       </div>
     </div>
 
-    <section class="acervo">
+    <section class="acervo" data-anime="1800">
       <div class="acervo-grid">
         
         <div class="acervo-item">
@@ -172,5 +176,7 @@
           <p>© Museu geológico da UFRR 2020</p>
         </div>
   </div>
+  <script src="scripts/simple-anime.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 </html>

@@ -31,13 +31,17 @@
   
       <div class="hero">
         <div class="title">
-          <p>UFRR</p> <img class="linha" src="src/imgs/line_small.png" alt="Linha">
-          <p>das 10:00 ás 18:00</p>
-          <h1>Museu de<br>Geociências</h1>
-          <a href="acervo.html">Conheça o Acervo</a><img class="linha_regular" src="src/imgs/line_regular.png" alt="Linha">
+          <div data-anime="1200">
+            <p>UFRR</p> <img class="linha" src="src/imgs/line_small.png" alt="Linha">
+            <p>das 10:00 ás 18:00</p>
+          </div>
+          <h1 data-anime="800">Museu de<br>Geociências</h1>
+          <div data-anime="1400">
+            <a href="acervo.html">Conheça o Acervo</a><img class="linha_regular" src="src/imgs/line_regular.png" alt="Linha">
+          </div>
         </div>
 
-        <div class="slider-wrapper">
+        <div class="slider-wrapper fadeInDown" data-anime="1600">
 
           <div class="slide-item">
             <img src="src/imgs/postexample2.png" alt="postexample">
@@ -218,5 +222,6 @@
     </div>
 
     <script src="scripts/simple-anime.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
