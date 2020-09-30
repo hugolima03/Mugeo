@@ -1,0 +1,53 @@
+body {
+  background-image: url("../src/imgs/post-template-hero2.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+main {
+  margin-top: 400px;
+  grid-area: content;
+  width: 100%;
+  background-color: #F1F3F8;
+}
+
+.post-content-wrapper {
+  background: #ffffff;
+  width: 900px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.418);
+  border-radius: 30px;
+  text-align: center;
+  padding: 5px 25px 80px;
+  margin-top: -300px;
+}
+
+.post-content-wrapper label {
+  font-size: 12px;
+  font-family: 'Archivo';
+  color: #EE3A19;
+  font-weight: 700;
+}
+
+.post-content-wrapper h1 {
+  font-size: 42px;
+  font-family: 'Archivo';
+  font-weight: normal;
+  width: 500px;
+  margin: 30px auto;
+}
+
+.post-content-wrapper img {
+  width: 720px;
+  margin-bottom: 35px;
+}
+
+.post-content-wrapper p {
+  width: 720px;
+  margin: 20px auto;
+  font-size: 16px;
+  font-family: 'Archivo';
+  line-height: 22px;
+  text-align: left;
+  text-indent: 30px;
+}

@@ -2,6 +2,9 @@
 
 /* Tablet */
 @media (max-width: 1050px) {
+  body {
+    background-size: auto;
+  }
   /* Content */
   .content_grid {
     width: 720px;
