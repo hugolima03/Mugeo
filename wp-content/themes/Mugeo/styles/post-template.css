@@ -9,6 +9,7 @@ main {
   grid-area: content;
   width: 100%;
   background-color: #F1F3F8;
+  padding-bottom: 80px;
 }
 
 .post-content-wrapper {
