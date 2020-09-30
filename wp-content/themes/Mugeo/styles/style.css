@@ -8,6 +8,7 @@
   "hero2 hero2 hero2"
   "content content content"
   "sidebar sidebar sidebar"
+  "news news news"
   "footer footer footer"
   "copyright copyright copyright"
   ;
@@ -106,7 +107,7 @@ h1 {
 }
 
 .title {
-  margin: 100px auto 120px;
+  margin: 100px auto 50px;
 }
 
 /* Slider do Hero */
@@ -337,6 +338,10 @@ h1 {
 
 .contato_grid img:nth-child(1) {
   grid-area: foto;
+}
+
+.svg-icon {
+  width: 25px;
 }
 
 .social {

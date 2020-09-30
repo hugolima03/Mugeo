@@ -412,4 +412,8 @@
   .post a {
     grid-column: 1;
   }
+
+  .newsletter input{
+    width: 250px;
+  }
 }
