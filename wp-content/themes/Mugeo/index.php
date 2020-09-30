@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mugeo - Museu geológico UFRR</title>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Cardo:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="styles/responsivo.css">
-  <link rel="shortcut icon" href="src/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/styles/responsivo.css">
+  <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/src/favicon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
   <div class="estrutura">
     <header class="header">
       <div>
-        <a href="index.html" class="logo_a"><img src="src/imgs/mugeo_logo.png" class="logo" alt="Logo Mugeo"></a>
+        <a href="index.html" class="logo_a"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/mugeo_logo.png" class="logo" alt="Logo Mugeo"></a>
       </div>
       <nav class="nav">
         <ul>
@@ -33,12 +33,12 @@
     <div class="hero">
       <div class="title">
         <div data-anime="1200">
-          <p>UFRR</p> <img class="linha" src="src/imgs/line_small.png" alt="Linha">
+          <p>UFRR</p> <img class="linha" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_small.png" alt="Linha">
           <p>das 10:00 ás 18:00</p>
         </div>
         <h1 data-anime="800">Museu de<br>Geociências</h1>
         <div data-anime="1400">
-          <a href="acervo.html">Conheça o Acervo</a><img class="linha_regular" src="src/imgs/line_regular.png"
+          <a href="acervo.html">Conheça o Acervo</a><img class="linha_regular" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_regular.png"
             alt="Linha">
         </div>
       </div>
@@ -46,25 +46,25 @@
       <div class="slider-wrapper fadeInDown" data-anime="1600">
 
         <div class="slide-item">
-          <img src="src/imgs/postexample2.png" alt="postexample">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/postexample2.png" alt="postexample">
           <h3>Evento</h3>
-          <img class="linha_small" src="src/imgs/line_small.png" alt="Linha"><br>
+          <img class="linha_small" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_small.png" alt="Linha"><br>
           <p>Terça-feira</p><br>
           <p>Andrea Mantegnea - Parnassus</p>
         </div>
 
         <div class="slide-item">
-          <img src="src/imgs/postexample3.png" alt="postexample">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/postexample3.png" alt="postexample">
           <h3>Evento</h3>
-          <img class="linha_small" src="src/imgs/line_small.png" alt="Linha"><br>
+          <img class="linha_small" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_small.png" alt="Linha"><br>
           <p>Terça-feira</p><br>
           <p>Andrea Mantegnea - Parnassus</p>
         </div>
 
         <div class="slide-item">
-          <img src="src/imgs/postexample.png" alt="postexample">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/postexample.png" alt="postexample">
           <h3>Evento</h3>
-          <img class="linha_small" src="src/imgs/line_small.png" alt="Linha"><br>
+          <img class="linha_small" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_small.png" alt="Linha"><br>
           <p>Terça-feira</p><br>
           <p>Andrea Mantegnea - Parnassus</p>
         </div>
@@ -76,10 +76,10 @@
     <main class="main">
       <div class="content_grid">
         <h3>Notícias relevantes</h3>
-        <img class="linha_preta" src="src/imgs/line_black_big.png" alt="Linha preta">
+        <img class="linha_preta" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_black_big.png" alt="Linha preta">
 
         <article>
-          <img src="src/imgs/postexample4.png" alt="Exemplo de post">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/postexample4.png" alt="Exemplo de post">
           <h4>Pertubações geológicas no ecossistema amazonico</h4>
           <label>Evento</label>
           <p class="article-content">
@@ -92,10 +92,10 @@
           </div><br>
         </article>
 
-        <img id="line_with_opacity" src="src/imgs/line_with_opacity.png" alt="Linha">
+        <img id="line_with_opacity" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_with_opacity.png" alt="Linha">
 
         <article>
-          <img src="src/imgs/postexample5.png" alt="Exemplo de post">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/postexample5.png" alt="Exemplo de post">
           <h4>Pertubações geológicas no ecossistema amazonico</h4>
           <label>Evento</label>
           <p class="article-content">
@@ -115,10 +115,10 @@
 
         <section class="visita">
           <h3>Planeje sua visíta</h3>
-          <img class="linha_preta" src="src/imgs/line_black_big.png" alt="Linha preta">
+          <img class="linha_preta" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_black_big.png" alt="Linha preta">
 
           <div class="visita_grid">
-            <img class="image_indenter" src="src/imgs/visite.png" alt="Visite o Mugeo">
+            <img class="image_indenter" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/visite.png" alt="Visite o Mugeo">
 
             <div class="horario">
               <h2>
@@ -154,9 +154,9 @@
 
         <section>
           <h3>Contato</h3>
-          <img class="linha_preta" src="src/imgs/line_black_big.png" alt="Linha preta">
+          <img class="linha_preta" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_black_big.png" alt="Linha preta">
           <div class="contato_grid">
-            <img class="image_indenter contato_img" src="src/imgs/contato_mapa.png" alt="">
+            <img class="image_indenter contato_img" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/contato_mapa.png" alt="">
             <div class="social">
               <h2>Conheça nossas redes sociais</h2>
               <p>
@@ -165,15 +165,15 @@
               </p>
               <ul>
                 <li>
-                  <img src="src/imgs/icons/insta.svg" alt="Instagram Icon" class="svg-icon">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/insta.svg" alt="Instagram Icon" class="svg-icon">
                   <p>@mugeo_ufrr</p>
                 </li>
                 <li>
-                  <img src="src/imgs/icons/face.svg" alt="Instagram Icon" class="svg-icon">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/face.svg" alt="Instagram Icon" class="svg-icon">
                   <p>@mugeo_ufrr</p>
                 </li>
                 <li>
-                  <img src="src/imgs/icons/twitter.svg" alt="Instagram Icon" class="svg-icon">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/twitter.svg" alt="Instagram Icon" class="svg-icon">
                   <p>@mugeo_ufrr</p>
                 </li>
               </ul>
@@ -192,7 +192,7 @@
 
       <div class="footer_grid">
         <div class="footer_column_1">
-          <img src="src/imgs/mugeo_logo.png" alt="Mugeo">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/mugeo_logo.png" alt="Mugeo">
           <ul>
             <li><a href="acervo.html">Acervo</a></li>
             <li><a href="blog.html">Blog</a></li>
@@ -211,19 +211,19 @@
           <div class="social social_footer">
             <ul>
               <li>
-                <a href="https://www.instagram.com/"><img src="src/imgs/icons/instagram_white_icon.png"
+                <a href="https://www.instagram.com/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/instagram_white_icon.png"
                     alt="Instagram Icon">
                   <p>@mugeo_ufrr</p>
                 </a>
               </li>
               <li>
-                <a href="https://www.facebook.com/"><img src="src/imgs/icons/facebook_white_icon.png"
+                <a href="https://www.facebook.com/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/facebook_white_icon.png"
                     alt="Instagram Icon">
                   <p>@mugeo_ufrr</p>
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/home"><img src="src/imgs/icons/twitter_white_icon.png"
+                <a href="https://twitter.com/home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/twitter_white_icon.png"
                     alt="Instagram Icon">
                   <p>@mugeo_ufrr</p>
                 </a>
@@ -247,8 +247,8 @@
     </div>
   </div>
 
-  <script src="scripts/simple-anime.js"></script>
-  <script src="scripts/main.js"></script>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/scripts/simple-anime.js"></script>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/scripts/main.js"></script>
 </body>
 
 </html>
