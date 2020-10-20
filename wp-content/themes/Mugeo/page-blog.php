@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php 
+//Template Name: Blog
+get_header(); 
+?>
 
     <div class="blog-hero" data-anime="800">
       <img src="src/imgs/postexample6.png" alt="">

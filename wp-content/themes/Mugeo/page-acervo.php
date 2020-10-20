@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php 
+//Template Name: Acervo
+get_header(); 
+?>
 
 <div class="hero">
     <div class="title_acervo">

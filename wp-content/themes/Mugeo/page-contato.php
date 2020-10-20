@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php 
+//Template Name: Contato
+get_header(); 
+?>
 
 <div class="contato-estrutura">
     <div class="hero-contato">

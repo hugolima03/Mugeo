@@ -18,14 +18,14 @@
   <div class="estrutura">
     <header class="header">
       <div>
-        <a href="index.html" class="logo_a"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/mugeo_logo.png" class="logo" alt="Logo Mugeo"></a>
+        <a href="/home/" class="logo_a"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/mugeo_logo.png" class="logo" alt="Logo Mugeo"></a>
       </div>
       <nav class="nav">
         <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="acervo.html">Acervo</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contato.html">Contato</a></li>
+          <li><a href="/home/">Início</a></li>
+          <li><a href="/acervo/">Acervo</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contato/">Contato</a></li>
         </ul>
 
 
