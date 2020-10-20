@@ -156,7 +156,7 @@
           <h3>Contato</h3>
           <img class="linha_preta" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_black_big.png" alt="Linha preta">
           <div class="contato_grid">
-            <img class="image_indenter contato_img" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/contato_mapa.png" alt="">
+            <a href="https://www.google.com/maps/place/UFRR/@2.8344042,-60.6960301,17z/data=!3m1!4b1!4m5!3m4!1s0x8d93057634767323:0xe7b9d451b20cb198!8m2!3d2.8344042!4d-60.6938414" target="_blank" ><img class="image_indenter contato_img" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/contato_mapa.png" alt="Mugeo UFRR"></a>
             <div class="social">
               <h2>Conheça nossas redes sociais</h2>
               <p>
