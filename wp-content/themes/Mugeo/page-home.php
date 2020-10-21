@@ -3,7 +3,6 @@
 get_header(); 
 ?>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <div class="hero">
     <div class="title">
         <div data-anime="1200">
@@ -13,39 +12,33 @@ get_header();
         </div>
         <h1 data-anime="800">Museu de<br>Geociências</h1>
         <div data-anime="1400">
-            <a href="acervo.html">Conheça o Acervo</a><img class="linha_regular"
+            <a href="/acervo/">Conheça o Acervo</a><img class="linha_regular"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_regular.png" alt="Linha">
         </div>
     </div>
 
     <div class="slider-wrapper fadeInDown" data-anime="1600">
 
+        <?php query_posts('showposts=3&cat=2'); ?>
+
+        <?php 
+        
+        if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
         <div class="slide-item">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/postexample2.png" alt="postexample">
-            <h3>Evento</h3>
+            <a href="<?php the_permalink(); ?>"
+                title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('homepage-slider-news'); ?></a>
+            <h3>
+                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+            </h3>
             <img class="linha_small" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_small.png"
                 alt="Linha"><br>
+
             <p>Terça-feira</p><br>
             <p>Andrea Mantegnea - Parnassus</p>
         </div>
 
-        <div class="slide-item">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/postexample3.png" alt="postexample">
-            <h3>Evento</h3>
-            <img class="linha_small" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_small.png"
-                alt="Linha"><br>
-            <p>Terça-feira</p><br>
-            <p>Andrea Mantegnea - Parnassus</p>
-        </div>
-
-        <div class="slide-item">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/postexample.png" alt="postexample">
-            <h3>Evento</h3>
-            <img class="linha_small" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_small.png"
-                alt="Linha"><br>
-            <p>Terça-feira</p><br>
-            <p>Andrea Mantegnea - Parnassus</p>
-        </div>
+        <?php endwhile; else: endif?>
 
     </div>
 
@@ -56,18 +49,17 @@ get_header();
         <h3>Notícias relevantes</h3>
         <img class="linha_preta" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_black_big.png"
             alt="Linha preta">
+        <?php query_posts('showposts=2&cat=3'); ?>
+
+        <?php 
+
+        if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
         <article>
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/postexample4.png" alt="Exemplo de post">
-            <h4>Pertubações geológicas no ecossistema amazonico</h4>
+            <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Exemplo de post">
+            <h4><?php the_title(); ?></h4>
             <label>Evento</label>
-            <p class="article-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex
-                ea commodo consequat.
-            </p>
+            <p class="article-content"><?php echo get_the_excerpt(); ?></p>
             <div class="article-button">
                 <p>Saiba Mais</p>
             </div><br>
@@ -75,6 +67,8 @@ get_header();
 
         <img id="line_with_opacity" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_with_opacity.png"
             alt="Linha">
+
+        <?php endwhile; else: endif?>
 
         <article>
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/postexample5.png" alt="Exemplo de post">
@@ -180,7 +174,6 @@ get_header();
         </a>
     </div>
 </main>
-<?php endwhile; else: endif?>
 
 
 <?php get_footer(); ?>
