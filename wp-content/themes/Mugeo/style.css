@@ -938,7 +938,7 @@ a:hover {
 /* Página Contato */
 
 .contato-body {
-  background-image: url("../src/imgs/contato.jpg");
+  background-image: url("src/imgs/contato.jpg");
 }
 
 .contato-estrutura {
@@ -1087,7 +1087,7 @@ a:hover {
 }
 
 .post-template-body {
-  background-image: url("/src/imgs/post-template-hero2.jpg");
+  background-image: url("src/imgs/post-template-hero2.jpg");
   background-repeat: no-repeat;
   background-size: contain;
 }
