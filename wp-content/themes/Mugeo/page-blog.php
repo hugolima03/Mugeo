@@ -3,6 +3,7 @@
 get_header(); 
 ?>
 
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <div class="blog-hero" data-anime="800">
     <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/postexample6.png" alt="">
     <h2><a href="post-template.html">308 vagas - UFRR recebe inscrições da segunda chamada do Auxílio Inclusão Digital
@@ -118,6 +119,8 @@ get_header();
     </div>
 </main>
 
+
+<?php endwhile; else: endif?>
 <div class="newsletter">
     <h2>Assine nossa Newsletter</h2>
     <h3>Receba notícias do mugeo pelo email!</h3>

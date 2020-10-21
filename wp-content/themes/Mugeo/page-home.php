@@ -3,6 +3,7 @@
 get_header(); 
 ?>
 
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <div class="hero">
     <div class="title">
         <div data-anime="1200">
@@ -179,5 +180,7 @@ get_header();
         </a>
     </div>
 </main>
+<?php endwhile; else: endif?>
+
 
 <?php get_footer(); ?>
