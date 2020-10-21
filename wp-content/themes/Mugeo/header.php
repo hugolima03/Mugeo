@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/styles/responsivo.css">
   <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/src/favicon.png" type="image/x-icon">
-  
   <?php wp_head(); ?>
 </head>
 

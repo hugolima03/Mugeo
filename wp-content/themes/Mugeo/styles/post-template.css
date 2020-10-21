@@ -1,10 +1,10 @@
-body {
+body .post-template-body{
   background-image: url("../src/imgs/post-template-hero2.jpg");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-main {
+main .post-template-main {
   margin-top: 400px;
   grid-area: content;
   width: 100%;

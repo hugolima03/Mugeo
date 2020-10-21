@@ -1,3 +1,7 @@
+<?php 
+//Template Name: Post Template
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -7,32 +11,28 @@
   <title>Mugeo - Museu geológico UFRR</title>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Cardo:wght@400;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="styles/reset.css">
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/post-template.css">
-  <link rel="stylesheet" href="styles/responsivo.css">
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/styles/reset.css">
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/styles/responsivo.css">
   <link rel="shortcut icon" href="src/favicon.png" type="image/x-icon">
 </head>
-
-<body>
+<body class="post-template-body">
   <div class="estrutura">
     <header class="header">
       <div>
-        <a href="index.html" class="logo_a"><img src="src/imgs/mugeo_logo.png" class="logo" alt="Logo Mugeo"></a>
+        <a href="/home/" class="logo_a"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/mugeo_logo.png" class="logo" alt="Logo Mugeo"></a>
       </div>
       <nav class="nav">
         <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="acervo.html">Acervo</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contato.html">Contato</a></li>
+          <li><a href="/home/">Início</a></li>
+          <li><a href="/acervo/">Acervo</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contato/">Contato</a></li>
         </ul>
-
-
       </nav>
     </header>
 
-    <main>
+    <main class="post-template-main">
       <div class="post-content-wrapper">
         <label>Notícia</label>
         <h1>308 vagas - UFRR recebe inscrições da segunda chamada do Auxílio Inclusão Digital até 18/09</h1>
