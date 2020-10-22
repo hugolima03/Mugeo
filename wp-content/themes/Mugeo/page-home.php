@@ -60,9 +60,11 @@ get_header();
             <h4><?php the_title(); ?></h4>
             <label>Evento</label>
             <p class="article-content"><?php echo get_the_excerpt(); ?></p>
-            <div class="article-button">
-                <p>Saiba Mais</p>
-            </div><br>
+            <a href="<?php the_permalink(); ?>">
+                <div class="article-button">
+                    <p>Saiba Mais</p>
+                </div><br>
+            </a>
         </article>
 
         <img id="line_with_opacity" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_with_opacity.png"
@@ -70,22 +72,8 @@ get_header();
 
         <?php endwhile; else: endif?>
 
-        <article>
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/postexample5.png" alt="Exemplo de post">
-            <h4>Pertubações geológicas no ecossistema amazonico</h4>
-            <label>Evento</label>
-            <p class="article-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex
-                ea commodo consequat.
-            </p>
-            <div class="article-button">
-                <p>Saiba Mais</p>
-            </div><br>
-        </article>
-        <a href="blog.html" class="black-a">
+        
+        <a href="/blog/" class="black-a">
             <div class="blog-button">
                 <p>Acessar o blog</p>
             </div>
@@ -167,7 +155,7 @@ get_header();
                 </div>
             </div>
         </section>
-        <a href="contato.html" class="black-a">
+        <a href="/contato/" class="black-a">
             <div class="blog-button buttonbottomspace">
                 <p>Contato</p>
             </div>
