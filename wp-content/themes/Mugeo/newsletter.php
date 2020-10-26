@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
-        <?php
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <?php
 		$nome = $_POST['nome'];
 		$email = $_POST['email'];
 		
         require 'vendor/autoload.php';
         if($nome && $email) {
-        $from = new SendGrid\Email(null, "hugiss5216@gmail.com");
+        $from = new SendGrid\Email(null, "hugo8romao@gmail.com");
         $subject = "Email para Newsletter";
-        $to = new SendGrid\Email(null, "hugo8romao@gmail.com");
+        $to = new SendGrid\Email(null, "hugiss5216romao@gmail.com");
         $content = new SendGrid\Content("text/html", "Olá , <br><br>Novo email para Newsletter<br><br>Nome: $nome<br>Email: $email <br>");
         $mail = new SendGrid\Mail($from, $subject, $to, $content);
         
@@ -23,11 +25,15 @@
 
         $response = $sg->client->mail()->send()->post($mail);
         echo "Mensagem enviada com sucesso";
-        } else {
-            echo 'Email não enviado: informar o email e nome';
-        }
+        
+        header('Location: /sucesso/');
+        
+    } else {
+        echo 'Email não enviado: informar o email e nome';
+    }
 
-		
-        ?>
-    </body>
+
+    ?>
+</body>
+
 </html>
