@@ -38,13 +38,13 @@ get_header();
                 data-anime="1200"></a>
 
         <div class="contato-form" data-anime="1800">
-            <form method="POST" action="<?php echo get_stylesheet_directory_uri(); ?>/formulario-contato.php">
-                <label><strong>Nome</strong></label>
-                <input type="text" name="nome" id="nome">
-                <label><strong>Email</strong></label>
-                <input type="email" name="email" id="email">
-                <label><strong>Mensagem</strong></label>
-                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+            <form action="">
+                <label for=""><strong>Nome</strong></label>
+                <input type="text">
+                <label for=""><strong>Email</strong></label>
+                <input type="text">
+                <label for=""><strong>Mensagem</strong></label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
                 <input type="submit" value="ENVIAR"><br>
                 <div class="contato-icon">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/contato-telefone.png"
