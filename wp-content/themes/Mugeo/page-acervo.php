@@ -18,18 +18,24 @@ get_header();
         </div>
     </div>
 
-    <div class="input-wrapper" data-anime="1800">
-        <label for="">Coleção:</label>
-        <input type="text" placeholder="Minerais">
-        <label for="">Nome do espécime:</label>
-        <input type="text" placeholder="Quartzo Rosa">
-        <button>Filtrar</button>
-    </div>
+    <form action="<?php echo site_url().'/controllerfiltro'; ?>" method="post" class="input-wrapper" data-anime="1800" name="FiltroBusca" id="FiltroBusca">
+        <input type="hidden" id="CampoBuscaFiltro" name="CampoBuscaFiltro" value="<?php echo $_GET['CampoBusca']; ?>" >
+        <select name="Categoria" id="Categoria" required>
+            <option value="">Coleção</option>
+            <?php 
+            $BFetch=$wpdb->get_results("select * from wp_terms where term_id >4");
+            foreach($BFetch as $Fetch) {
+                echo "<option value='$Fetch->slug'>$Fetch->name</option>";
+            }
+            ?>
+        </select>
+        <input type="submit" value="Filtrar">
+    </form>
 </div>
 
 <section class="acervo" data-anime="1800">
     <div class="acervo-grid">
-        <?php query_posts('showposts=3&cat=5'); ?>
+        <?php query_posts('cat=5,6'); ?>
 
         <?php
 
