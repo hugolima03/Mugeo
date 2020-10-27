@@ -642,13 +642,14 @@ a:hover {
   width: 100%;
   display: flex;
   margin: 0 auto;
+  margin-top: -120px;
   justify-content: center;
   background: #F1F3F8;
   padding-bottom: 150px;
 }
 
 .acervo-grid {
-  margin-top: -250px;
+  margin-top: -139px;
   display: grid;
   gap: 32px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -673,7 +674,7 @@ a:hover {
   line-height: 24px;
 }
 
-.acervo-item-description p {
+.acervo-item-description p,a {
   color: #4E5D73;
 }
 

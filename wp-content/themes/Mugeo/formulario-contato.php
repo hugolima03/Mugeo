@@ -28,10 +28,9 @@
 
         $response = $sg->client->mail()->send()->post($mail);
         echo "Mensagem enviada com sucesso";
-        <?php header('Location: <?php echo get_stylesheet_directory_uri(); ?>/home/'); ?>
+        header('Location: /sucesso/');
         } else {
             echo"Email não enviado: informar o email, nome e mensagem";
-            <?php header('Location: https://hacktoberfest.digitalocean.com/'); ?>
         }
         ?>
 </body>

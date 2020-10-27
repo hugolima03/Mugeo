@@ -3,17 +3,18 @@
 get_header(); 
 ?>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
 <div class="hero">
     <div class="title_acervo">
         <div data-anime="1200">
-            <p>UFRR</p> <img class="linha" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_small.png" alt="Linha">
+            <p>UFRR</p> <img class="linha" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_small.png"
+                alt="Linha">
             <p>das 10:00 ás 18:00</p>
         </div>
         <h1 data-anime="800">Acervo</h1>
         <div data-anime="1400">
-            <a href="acervo.html">Conheça o Acervo</a><img class="linha_regular" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_regular.png"
-                alt="Linha">
+            <a href="acervo.html">Conheça o Acervo</a><img class="linha_regular"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_regular.png" alt="Linha">
         </div>
     </div>
 
@@ -28,71 +29,20 @@ get_header();
 
 <section class="acervo" data-anime="1800">
     <div class="acervo-grid">
+        <?php query_posts('showposts=3&cat=5'); ?>
+
+        <?php
+
+        if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
         <div class="acervo-item">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/acervo-item.png" alt="">
+            <a href="<?php the_permalink(); ?>"><img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Acervo-Item"></a>
             <div class="acervo-item-description">
                 <p>
-                    <strong>Itabirito</strong>
+                    <a href="<?php the_permalink(); ?>"><strong><?php the_title(); ?></strong></a>
                 </p>
                 <p>
-                    Rochas
-                </p>
-                <p>
-                    MHNJB.GE.02/2016
-                </p>
-            </div>
-        </div>
-        <div class="acervo-item">
-            <img src="src/imgs/acervo-item.png" alt="">
-            <div class="acervo-item-description">
-                <p>
-                    <strong>Itabirito</strong>
-                </p>
-                <p>
-                    Rochas
-                </p>
-                <p>
-                    MHNJB.GE.02/2016
-                </p>
-            </div>
-        </div>
-        <div class="acervo-item">
-            <img src="src/imgs/acervo-item.png" alt="">
-            <div class="acervo-item-description">
-                <p>
-                    <strong>Itabirito</strong>
-                </p>
-                <p>
-                    Rochas
-                </p>
-                <p>
-                    MHNJB.GE.02/2016
-                </p>
-            </div>
-        </div>
-        <div class="acervo-item">
-            <img src="src/imgs/acervo-item.png" alt="">
-            <div class="acervo-item-description">
-                <p>
-                    <strong>Itabirito</strong>
-                </p>
-                <p>
-                    Rochas
-                </p>
-                <p>
-                    MHNJB.GE.02/2016
-                </p>
-            </div>
-        </div>
-        <div class="acervo-item">
-            <img src="src/imgs/acervo-item.png" alt="">
-            <div class="acervo-item-description">
-                <p>
-                    <strong>Itabirito</strong>
-                </p>
-                <p>
-                    Rochas
+                    <?php the_category(); ?>
                 </p>
                 <p>
                     MHNJB.GE.02/2016
@@ -100,8 +50,9 @@ get_header();
             </div>
         </div>
 
+        <?php endwhile; else: endif?>
     </div>
 </section>
 
-<?php endwhile; else: endif?>
+
 <?php get_footer(); ?>
