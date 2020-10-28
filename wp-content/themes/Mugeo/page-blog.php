@@ -183,3 +183,10 @@ get_header();
 </body>
 
 </html>
+
+<div style="display: none">
+    <?php 
+    //Template Name: Blog
+    get_footer(); 
+    ?>
+</div>
