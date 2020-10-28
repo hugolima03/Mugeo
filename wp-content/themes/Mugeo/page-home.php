@@ -56,15 +56,23 @@ get_header();
         if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
         <article>
-            <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Exemplo de post">
+            <a href="<?php the_permalink(); ?>"><img src="<?php echo get_the_post_thumbnail_url(); ?>"
+                    alt="Exemplo de post"></a>
             <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-            <label>Evento</label>
+            <label>
+                <?php
+                    $tag = get_the_tags();
+                    if ($tag) {
+                    $tag = $tag[0]; echo $tag->name;
+                    }
+                ?>
+            </label>
             <p class="article-content"><?php echo get_the_excerpt(); ?></p>
-            <a href="<?php the_permalink(); ?>">
-                <div class="article-button">
+            <div class="article-button">
+                <a href="<?php the_permalink(); ?>">
                     <p>Saiba Mais</p>
-                </div><br>
-            </a>
+                </a>
+            </div><br>
         </article>
 
         <img id="line_with_opacity" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_with_opacity.png"

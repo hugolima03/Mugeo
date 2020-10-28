@@ -239,7 +239,7 @@ h1 {
 
 }
 
-.main article img {
+.main article a img {
   width: 368px;
   margin-left: -8.5px;
   grid-area: foto;
@@ -254,8 +254,9 @@ h1 {
   grid-area: article-title;
 }
 
-.main article h4 a {
+.main article a {
   color:#1E1D18;
+  grid-area: foto;
 }
 
 .main article label {
@@ -290,6 +291,8 @@ h1 {
 
 .main article .article-button p {
   margin: 0 auto;
+  margin-left: 43px;
+  margin-top: 18px;
   align-self: center;
   font-size: 14px;
   font-family: 'Archivo';
