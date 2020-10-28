@@ -3,43 +3,42 @@
 get_header(); 
 ?>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <div class="blog-hero" data-anime="800">
-    
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/postexample6.png" alt="">
-    <h2><a href="post-template.html">308 vagas - UFRR recebe inscrições da segunda chamada do Auxílio Inclusão Digital
-            até 18/09</a></h2>
-    <p>A Universidade Federal de Roraima (UFRR) está com inscrições abertas para a segunda chamada do Auxílio Inclusão
-        Digital, na modalidade de aquisição de equipamento eletrônico...</p>
+
+    <?php query_posts('showposts=1&cat=7'); ?>
+
+    <?php
+
+    if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+    <a href="<?php the_permalink(); ?>"><img src="<?php echo get_the_post_thumbnail_url(); ?>" alt=""></a>
+    <h2><a class="post-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+    <p><?php echo get_the_excerpt(); ?></p>
+
+    <?php endwhile; else: endif?>
+
 </div>
 
 <div class="blog-noticias-hero" data-anime="1200">
     <div class="slider-wrapper-blog">
 
-        <div class="slide-item">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/blog-example.png" alt="postexample">
-            <h3>Evento</h3>
-            <img class="linha_small" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_small.png" alt="Linha"><br>
-            <p>Terça-feira</p><br>
-            <p>Andrea Mantegnea - Parnassus</p>
-        </div>
+        <?php query_posts('showposts=3&cat=8'); ?>
+
+        <?php
+
+    if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
         <div class="slide-item">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/blog-example2.png" alt="postexample">
-            <h3>Evento</h3>
-            <img class="linha_small" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_small.png" alt="Linha"><br>
-            <p>Terça-feira</p><br>
-            <p>Andrea Mantegnea - Parnassus</p>
-        </div>
-
-        <div class="slide-item">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/blog-example3.png" alt="postexample">
-            <h3>Evento</h3>
+            <a href="<?php the_permalink(); ?>"><img src="<?php echo get_the_post_thumbnail_url(); ?>"
+                    alt="postexample"></a>
+            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
             <img class="linha_small" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_small.png"
                 alt="Linha"><br>
             <p>Terça-feira</p><br>
             <p>Andrea Mantegnea - Parnassus</p>
         </div>
+
+        <?php endwhile; else: endif?>
 
     </div>
 </div>
@@ -49,35 +48,32 @@ get_header();
     <div class="blog-wrapper">
 
         <div class="post-wrapper">
+
+            <?php query_posts('showposts=3&cat=9'); ?>
+
+            <?php
+
+        if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <div class="post">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/postexample7.png" alt="">
-                <label>Notícia</label>
-                <h3>UFRR adquire dois mil testes rápidos</h3>
-                <p>A comunidade acadêmica da Universidade Federal de Roraima (UFRR) que tiver interesse em fazer o teste
-                    para Covid-19, poderá agendar o procedimento, a partir desta quarta-feira (19), por telefone. A
-                    instituição adquiriu dois mil testes rápidos, por meio de recursos próprios.</p>
-                <a href="">Saiba mais...</a>
+                <a href="<?php the_permalink(); ?>"><img src="<?php echo get_the_post_thumbnail_url(); ?>" alt=""></a>
+                <label>
+                    <?php
+                        $tag = get_the_tags();
+                        if ($tag) {
+                        $tag = $tag[0]; echo $tag->name;
+                        }
+                    ?>
+                </label>
+                <a class="post-link" href="<?php the_permalink(); ?>">
+                    <h3><?php the_title(); ?></h3>
+                </a>
+                <p><?php echo get_the_excerpt(); ?></p>
+                <a class="text-decoration-underline post-link" href="<?php the_permalink(); ?>">Saiba mais...</a>
             </div>
 
-            <div class="post">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/postexample7.png" alt="">
-                <label>Notícia</label>
-                <h3>UFRR adquire dois mil testes rápidos</h3>
-                <p>A comunidade acadêmica da Universidade Federal de Roraima (UFRR) que tiver interesse em fazer o teste
-                    para Covid-19, poderá agendar o procedimento, a partir desta quarta-feira (19), por telefone. A
-                    instituição adquiriu dois mil testes rápidos, por meio de recursos próprios.</p>
-                <a href="">Saiba mais...</a>
-            </div>
+            <?php endwhile; else: endif?>
 
-            <div class="post">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/postexample7.png" alt="">
-                <label>Notícia</label>
-                <h3>UFRR adquire dois mil testes rápidos</h3>
-                <p>A comunidade acadêmica da Universidade Federal de Roraima (UFRR) que tiver interesse em fazer o teste
-                    para Covid-19, poderá agendar o procedimento, a partir desta quarta-feira (19), por telefone. A
-                    instituição adquiriu dois mil testes rápidos, por meio de recursos próprios.</p>
-                <a href="">Saiba mais...</a>
-            </div>
+
         </div>
 
         <div class="sidebar-wrapper">
@@ -120,8 +116,6 @@ get_header();
     </div>
 </main>
 
-
-<?php endwhile; else: endif?>
 <div class="newsletter">
     <h2>Assine nossa Newsletter</h2>
     <h3>Receba notícias do mugeo pelo email!</h3>
@@ -146,19 +140,22 @@ get_header();
             <div class="social social_footer">
                 <ul>
                     <li>
-                        <a href="https://www.instagram.com/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/instagram_white_icon.png"
+                        <a href="https://www.instagram.com/"><img
+                                src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/instagram_white_icon.png"
                                 alt="Instagram Icon">
                             <p>@mugeo_ufrr</p>
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/facebook_white_icon.png"
+                        <a href="https://www.facebook.com/"><img
+                                src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/facebook_white_icon.png"
                                 alt="Instagram Icon">
                             <p>@mugeo_ufrr</p>
                         </a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/twitter_white_icon.png"
+                        <a href="https://twitter.com/home"><img
+                                src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/twitter_white_icon.png"
                                 alt="Instagram Icon">
                             <p>@mugeo_ufrr</p>
                         </a>

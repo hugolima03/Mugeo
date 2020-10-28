@@ -708,7 +708,7 @@ a:hover {
 
 .blog-hero {
   width: 1050px;
-  margin: 25px auto;
+  margin: 25px auto 100px auto;
   grid-area: hero;
   display: grid;
   grid-template-rows: 80px auto;
@@ -721,11 +721,15 @@ a:hover {
 }
 
 .blog-hero a {
-  grid-column: 2;
+  /* grid-column: 2; */
   font-family: 'Archivo';
   font-weight: 700;
   font-size: 18px;
   color: white;
+}
+
+.grid-column-1 {
+  grid-column: 1;
 }
 
 .blog-hero h2 {
@@ -777,6 +781,10 @@ a:hover {
   line-height: 0px;
   margin-top: 15px;
   margin-bottom: 11px;
+}
+
+.slider-wrapper-blog h3 a {
+  color: #F1F3F8;
 }
 
 .slider-wrapper-blog div + div {
@@ -836,6 +844,7 @@ a:hover {
   font-weight: 700;
   font-size: 24px;
   color:#1E1D18;
+  
 }
 
 .post p {
@@ -845,13 +854,16 @@ a:hover {
   line-height: 22px;
 }
 
-.post a {
+.post-link {
   grid-column: 2;
   font-family: 'Archivo';
   font-size: 18px;
   font-weight: 700;
-  text-decoration: underline;
   color:#1E1D18;
+}
+
+.text-decoration-underline{
+  text-decoration: underline;
 }
 
 /* Newsletter */
