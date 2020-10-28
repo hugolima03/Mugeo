@@ -254,6 +254,10 @@ h1 {
   grid-area: article-title;
 }
 
+.main article h4 a {
+  color:#1E1D18;
+}
+
 .main article label {
   font-size: 14px;
   font-family: 'Archivo';
@@ -318,11 +322,17 @@ h1 {
 }
 
 .blog-button p {
+  text-align: center;
   align-self: center;
-  margin: 0 auto;
   font-family: 'Archivo';
   font-size: 14px;
   letter-spacing: 1.5px;
+  margin-left: 70px;
+  margin-top: 15px;
+}
+
+.blog-button-home p {
+  margin-left: 45px;
 }
 
 .black-a {
@@ -417,6 +427,10 @@ h1 {
   font-size: 16px;
   font-family: 'Archivo';
   line-height: 30px;
+}
+
+.social p a {
+  color: #1E1D18;
 }
 
 .social img + p {
@@ -542,6 +556,10 @@ a:hover {
 .footer_column_3 h3 {
   padding-left: 1em;
   font-size: 18px;
+}
+
+.footer_column_3 ul li a {
+  color: #F1F3F8;
 }
 
 .footer_column_4 {

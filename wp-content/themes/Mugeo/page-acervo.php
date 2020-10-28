@@ -35,7 +35,7 @@ get_header();
 
 <section class="acervo" data-anime="1800">
     <div class="acervo-grid">
-        <?php query_posts('cat=5,6'); ?>
+        <?php query_posts('cat=5,6' ); ?>
 
         <?php
 

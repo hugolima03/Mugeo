@@ -5,6 +5,7 @@ get_header();
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <div class="blog-hero" data-anime="800">
+    
     <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/postexample6.png" alt="">
     <h2><a href="post-template.html">308 vagas - UFRR recebe inscrições da segunda chamada do Auxílio Inclusão Digital
             até 18/09</a></h2>

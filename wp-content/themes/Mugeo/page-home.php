@@ -57,7 +57,7 @@ get_header();
 
         <article>
             <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Exemplo de post">
-            <h4><?php the_title(); ?></h4>
+            <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
             <label>Evento</label>
             <p class="article-content"><?php echo get_the_excerpt(); ?></p>
             <a href="<?php the_permalink(); ?>">
@@ -72,12 +72,12 @@ get_header();
 
         <?php endwhile; else: endif?>
 
-        
-        <a href="/blog/" class="black-a">
-            <div class="blog-button">
+
+        <div class="blog-button blog-button-home">
+            <a href="/blog/" class="black-a">
                 <p>Acessar o blog</p>
-            </div>
-        </a>
+            </a>
+        </div>
 
         <section class="visita">
             <h3>Planeje sua visíta</h3>
@@ -139,27 +139,27 @@ get_header();
                         <li>
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/insta.svg"
                                 alt="Instagram Icon" class="svg-icon">
-                            <p>@mugeo_ufrr</p>
+                            <p><a href="#">@mugeo_ufrr</a></p>
                         </li>
                         <li>
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/face.svg"
                                 alt="Instagram Icon" class="svg-icon">
-                            <p>@mugeo_ufrr</p>
+                            <p><a href="#">@mugeo_ufrr</a></p>
                         </li>
                         <li>
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/twitter.svg"
                                 alt="Instagram Icon" class="svg-icon">
-                            <p>@mugeo_ufrr</p>
+                            <p><a href="#">@mugeo_ufrr</a></p>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
-        <a href="/contato/" class="black-a">
-            <div class="blog-button buttonbottomspace">
+        <div class="blog-button buttonbottomspace">
+            <a href="/contato/" class="black-a">
                 <p>Contato</p>
-            </div>
-        </a>
+            </a>
+        </div>
     </div>
 </main>
 
