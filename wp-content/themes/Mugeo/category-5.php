@@ -11,9 +11,9 @@ get_header();
                 alt="Linha">
             <p>das 10:00 ás 18:00</p>
         </div>
-        <h1 data-anime="800">Acervo</h1>
+        <h1 data-anime="800">Rochas</h1>
         <div data-anime="1400">
-            <a href="acervo.html">Conheça o Acervo</a><img class="linha_regular"
+            <a href="/acervo/">Voltar para o Acervo</a><img class="linha_regular"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_regular.png" alt="Linha">
         </div>
     </div>
@@ -38,7 +38,7 @@ get_header();
     <div class="acervo-grid">
         
 
-        <?php query_posts('cat=5,6'); ?>
+        <?php query_posts('cat=5'); ?>
 
         <?php
 

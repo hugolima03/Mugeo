@@ -62,7 +62,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 body {
-  background: #090808;
+  background: #090808 no-repeat;
   background-image: url("src/imgs/mugeo_hero.png");
   background-size: contain;
 }

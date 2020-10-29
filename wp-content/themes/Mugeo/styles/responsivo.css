@@ -4,6 +4,7 @@
 @media (max-width: 1050px) {
   body {
     background-size: inherit;
+    background-position-x: -800px;
   }
   /* Content */
   .content_grid {
