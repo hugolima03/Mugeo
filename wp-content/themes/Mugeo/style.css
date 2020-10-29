@@ -1182,6 +1182,7 @@ a:hover {
 
 .post-content-wrapper img {
   margin-bottom: 35px;
+  border-radius: 4px;
   max-width: 720px;
 }
 

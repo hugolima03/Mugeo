@@ -287,7 +287,7 @@
     padding-bottom: 30px;
   }
 
-  .main article img {
+  .main article a img {
     width: 100%;
     margin-left: 0px;
   }
@@ -440,6 +440,7 @@
 
   .blog-hero h2 {
     text-align: center;
+    margin-top: 80px;
   }
 
   .blog-hero p {
@@ -453,7 +454,7 @@
     justify-items: center;
   }
 
-  .post img {
+  .post a {
     grid-row: span 4;
   }
 
@@ -464,6 +465,7 @@
   .post h3 {
     grid-column: 1;
     font-size: 18px;
+    margin: 0 30px;
   }
 
   .post p {
@@ -471,6 +473,7 @@
     font-size: 14px;
     padding: 0 15px;
     text-align: center;
+    margin-top: -30px;
   }
 
   .post a {
@@ -495,6 +498,7 @@
 
   .post-content-wrapper img {
     width: 300px;
+    margin-left: -6px;
   }
 
   .post-content-wrapper p {
