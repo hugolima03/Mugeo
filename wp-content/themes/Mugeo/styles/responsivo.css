@@ -188,6 +188,11 @@
     width: 440px;
   }
 
+  .blog-hero a {
+    width: 420px;
+    grid-row: span 4;
+  }
+
   .blog-hero img {
     width: 420px;
   }
@@ -217,6 +222,11 @@
   .post-wrapper {
     width: 640px;
     margin: 0 auto;
+  }
+
+  .post h3 {
+    grid-column: 1;
+    font-size: 18px;
   }
 
   /* Post Template */
@@ -432,6 +442,10 @@
   .blog-hero {
     width: 100%;
     justify-items: center;
+  }
+
+  .blog-hero a {
+    width: auto;
   }
 
   .blog-hero img {
