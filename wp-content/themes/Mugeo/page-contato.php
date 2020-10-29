@@ -13,7 +13,7 @@ get_header();
                     src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_small.png" alt="Linha">
                 <p>das 10:00 ás 18:00</p>
                 <h1>Contato</h1>
-                <a href="index.html">Museu geológico</a><img class="linha_regular"
+                <a href="/home/">Museu geológico</a><img class="linha_regular"
                     src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_regular.png" alt="Linha">
             </div>
         </div>

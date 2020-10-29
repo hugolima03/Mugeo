@@ -13,7 +13,7 @@ get_header();
         </div>
         <h1 data-anime="800">Acervo</h1>
         <div data-anime="1400">
-            <a href="acervo.html">Conheça o Acervo</a><img class="linha_regular"
+            <a href="/contato/">Entre em contato</a><img class="linha_regular"
                 src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_regular.png" alt="Linha">
         </div>
     </div>

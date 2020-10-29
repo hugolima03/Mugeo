@@ -232,6 +232,7 @@ h1 {
   "blog blog"
   ;
   column-gap: 10px;
+  margin-left: 20px;
 }
 
 .main article:not(:nth-child(3)) {
