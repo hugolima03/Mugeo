@@ -18,20 +18,11 @@ get_header();
         </div>
     </div>
 
-    <form action="<?php echo site_url().'/controllerfiltro'; ?>" method="post" class="input-wrapper" data-anime="1800"
-        name="FiltroBusca" id="FiltroBusca">
-        <input type="hidden" id="CampoBuscaFiltro" name="CampoBuscaFiltro" value="<?php echo $_GET['CampoBusca']; ?>">
-        <select name="Categoria" id="Categoria" required>
-            <option value="">Coleção</option>
-            <?php 
-            $BFetch=$wpdb->get_results("select * from wp_terms where term_id >4");
-            foreach($BFetch as $Fetch) {
-                echo "<option value='$Fetch->slug'>$Fetch->name</option>";
-            }
-            ?>
-        </select>
-        <input type="submit" value="Filtrar">
-    </form>
+    <div class="input-wrapper" data-anime="1800">
+        <p>Selecionar categoria: <a href="/category/rochas/">Rochas</a> ou <a href="/category/minerais/">Minerais</a>
+        </p>
+        <?php echo do_shortcode( '[searchandfilter fields="search" submit_label="Procurar"]' ); ?>
+    </div>
 </div>
 
 <section class="acervo" data-anime="1800">
