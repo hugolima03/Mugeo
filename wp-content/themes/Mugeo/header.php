@@ -26,7 +26,6 @@
           <li><a href="/blog/">Blog</a></li>
           <li><a href="/contato/">Contato</a></li>
         </ul>
-
-
       </nav>
+      <?php get_search_form(); ?>
     </header>
