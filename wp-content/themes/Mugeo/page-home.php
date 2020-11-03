@@ -19,7 +19,7 @@ get_header();
 
     <div class="slider-wrapper fadeInDown" data-anime="1600">
 
-        <?php query_posts('showposts=3&cat=2'); ?>
+        <?php query_posts('showposts=3&cat=4'); ?>
 
         <?php 
         
@@ -49,7 +49,7 @@ get_header();
         <h3>Notícias relevantes</h3>
         <img class="linha_preta" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_black_big.png"
             alt="Linha preta">
-        <?php query_posts('showposts=2&cat=3'); ?>
+        <?php query_posts('showposts=2&cat=5'); ?>
 
         <?php 
 

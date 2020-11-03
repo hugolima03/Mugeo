@@ -161,6 +161,7 @@ h1 {
 
 .slider-wrapper {
   display: flex;
+  margin-left: 10px;
 }
 
 .slider-wrapper img:nth-child(1) {
@@ -761,6 +762,11 @@ a:hover {
 
 /* Notícias menores do Hero do blog */
 
+.slide-item {
+  width: 304px;
+  margin-left: -10px;
+}
+
 .blog-noticias-hero {
   width: 1050px;
   margin: 25px auto;
@@ -770,11 +776,11 @@ a:hover {
 
 .slider-wrapper-blog {
   display: flex;
-  margin-top: -40px;
+  margin-left: 10px;
 }
 
 .slider-wrapper-blog img:nth-child(1) {
-  margin-left: -8.5px;
+  /* margin-left: -8.5px; */
   width: 290px;
 }
 
@@ -788,9 +794,8 @@ a:hover {
 .slider-wrapper-blog h3 {
   font-weight: 700;
   font-size: 18px;
-  line-height: 0px;
+  line-height: 18px;
   margin-top: 15px;
-  margin-bottom: 11px;
 }
 
 .slider-wrapper-blog h3 a {

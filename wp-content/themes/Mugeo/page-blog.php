@@ -5,7 +5,7 @@ get_header();
 
 <div class="blog-hero" data-anime="800">
 
-    <?php query_posts('showposts=1&cat=7'); ?>
+    <?php query_posts('showposts=1&cat=8'); ?>
 
     <?php
 
@@ -22,7 +22,7 @@ get_header();
 <div class="blog-noticias-hero" data-anime="1200">
     <div class="slider-wrapper-blog">
 
-        <?php query_posts('showposts=3&cat=8'); ?>
+        <?php query_posts('showposts=3&cat=9'); ?>
 
         <?php
 
@@ -31,11 +31,13 @@ get_header();
         <div class="slide-item">
             <a href="<?php the_permalink(); ?>"><img src="<?php echo get_the_post_thumbnail_url(); ?>"
                     alt="postexample"></a>
-            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+            <h3>
+                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            </h3>
             <img class="linha_small" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_small.png"
                 alt="Linha"><br>
-            <p>Terça-feira</p><br>
-            <p>Andrea Mantegnea - Parnassus</p>
+            <!-- <p>Terça-feira</p><br>
+            <p>Andrea Mantegnea - Parnassus</p> -->
         </div>
 
         <?php endwhile; else: endif?>
@@ -49,7 +51,7 @@ get_header();
 
         <div class="post-wrapper">
 
-            <?php query_posts('showposts=3&cat=9'); ?>
+            <?php query_posts('showposts=3&cat=10'); ?>
 
             <?php
 

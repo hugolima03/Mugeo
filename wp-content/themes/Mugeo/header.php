@@ -27,5 +27,4 @@
           <li><a href="/contato/">Contato</a></li>
         </ul>
       </nav>
-      <?php get_search_form(); ?>
     </header>
