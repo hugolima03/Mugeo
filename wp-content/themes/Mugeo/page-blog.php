@@ -56,7 +56,7 @@ get_header();
             <?php
 
         if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            <div class="post">
+            <div class="post-blog">
                 <a href="<?php the_permalink(); ?>"><img src="<?php echo get_the_post_thumbnail_url(); ?>" alt=""></a>
                 <label>
                     <?php

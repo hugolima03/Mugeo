@@ -1,15 +1,22 @@
 <?php get_header(); ?>
+		
+<div class="search-wrapper">
 
-<section>
-    <div>
-        <h1><?php echo single_cat_title(); ?></h1>
-
-        <?php get_template_part('includes/section','archive'); ?>
-
-        <?php previous_post_link(); ?>
-        <?php the_post(); ?>
-        <?php next_post_link(); ?>
-    </div>
-</section>
+	<?php 
+		
+		if( have_posts() ):
+			
+	    	while( have_posts() ): the_post(); ?>
+			
+                <?php get_template_part('content-search'); ?>
+            	
+			
+		<?php endwhile;
+			
+    endif;
+    
+    ?>
+    <a href="/acervo/">Voltar</a>
+</div>
 
 <?php get_footer(); ?>

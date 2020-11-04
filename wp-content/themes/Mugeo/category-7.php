@@ -21,7 +21,7 @@ get_header();
     <div class="input-wrapper" data-anime="1800">
         <p>Selecionar categoria: <a href="/category/rochas/">Rochas</a> ou <a href="/category/minerais/">Minerais</a>
         </p>
-        <?php echo do_shortcode( '[searchandfilter fields="search" submit_label="Procurar"]' ); ?>
+        <?php get_search_form(); ?>
     </div>
 </div>
 
@@ -29,7 +29,7 @@ get_header();
     <div class="acervo-grid">
         
 
-        <?php query_posts('cat=5'); ?>
+        <?php query_posts('cat=7'); ?>
 
         <?php
 
