@@ -950,11 +950,13 @@ a:hover {
 }
 
 .sidebar-component input {
-  margin-left: 10px;
   background: transparent;
   font-size: 14px;
   font-family: 'Archivo';
-  border: transparent;
+  border-bottom: 1px solid #1E1D18;
+  border-left: none;
+  border-right: none;
+  border-top: none;
 }
 
 .sidebar-component p {
@@ -971,6 +973,7 @@ a:hover {
 .sidebar-item label {
   font-family: 'Archivo';
   margin-left: 10px;
+  display: none;
 }
 
 /* Ajuste do Footer da página blog */

@@ -81,8 +81,8 @@ get_header();
         <div class="sidebar-wrapper">
             <div class="sidebar-component">
                 <div class="sidebar-item">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/1lupa.svg" alt="Procurar">
-                    <input type="text" placeholder="Procurar..."><br>
+                    <?php get_template_part('custom-search-form-blog'); ?>
+                    <!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/1lupa.svg" alt="Procurar"> -->
                 </div>
 
                 <div class="sidebar-item">
@@ -90,6 +90,7 @@ get_header();
                         alt="Tags"><label>Tags</label>
                 </div>
                 <p>
+                    <?php get_tags(); ?>
                     #saude #geografia #mugeo #hydros #ufrr #minerais #esculturas #estagio #esculturas #saude #mugeo
                     #ufrr
                 </p>
