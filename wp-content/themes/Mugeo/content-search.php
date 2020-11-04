@@ -9,7 +9,7 @@
     	<div class="search-content">
             <a href="<?php the_permalink(); ?>"><?php the_title('<h2 class="entry-title">','</h2>' ); ?></a>
             	
-            	<small><?php the_category(' '); ?> || <?php the_tags(); ?> || <?php edit_post_link(); ?></small>
+            	<small><?php edit_post_link(); ?></small>
             	
             	<?php the_excerpt(); ?>
         </div>

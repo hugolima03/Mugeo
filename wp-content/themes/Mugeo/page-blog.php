@@ -77,7 +77,7 @@ get_header();
 
 
         </div>
-
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <div class="sidebar-wrapper">
             <div class="sidebar-component">
                 <div class="sidebar-item">
@@ -100,6 +100,7 @@ get_header();
                     <label>Categorias</label>
                 </div>
                 <p>
+                    <?php get_categories(); ?>
                     #saude #geografia #mugeo #hydros #ufrr #minerais #esculturas #estagio #esculturas #saude #mugeo
                     #ufrr
                 </p>
@@ -115,6 +116,7 @@ get_header();
                 </p>
             </div>
         </div>
+        <?php endwhile; else: endif?>
 
     </div>
 </main>

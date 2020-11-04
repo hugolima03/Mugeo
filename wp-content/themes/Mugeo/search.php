@@ -16,7 +16,7 @@
     endif;
     
     ?>
-    <a href="/acervo/">Voltar</a>
+    <a href="/home/">Voltar</a>
 </div>
 
 <?php get_footer(); ?>
