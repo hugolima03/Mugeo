@@ -1,3 +1,6 @@
+<?php 
+//Template Name: Sucesso 
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
