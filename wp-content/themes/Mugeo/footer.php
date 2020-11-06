@@ -65,7 +65,6 @@
 
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/scripts/simple-anime.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/scripts/main.js"></script>
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/scripts/filtro-acervo.js"></script>
 
 <?php wp_footer(); ?>
 </body>

@@ -21,7 +21,8 @@ get_header();
     <div class="input-wrapper" data-anime="1800">
         <p>Selecionar categoria: <a href="/category/rochas/">Rochas</a> ou <a href="/category/minerais/">Minerais</a>
         </p>
-        <?php get_search_form(); ?>
+        <hr>
+        <?php get_template_part('custom-search-form-acervo-minerais'); ?>
     </div>
 </div>
 
