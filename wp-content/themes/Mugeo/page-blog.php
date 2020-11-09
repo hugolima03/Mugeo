@@ -124,9 +124,11 @@ get_header();
 <div class="newsletter">
     <h2>Assine nossa Newsletter</h2>
     <h3>Receba notícias do mugeo pelo email!</h3>
-    <input type="text" placeholder="Nome" style="text-align: center">
-    <input type="text" placeholder="Seu melhor Email" style="text-align: center">
-    <input type="submit" value="Enviar">
+    <form method="POST" action="<?php echo get_stylesheet_directory_uri(); ?>/newsletter.php">
+        <input type="text" name="nome" id="nome" placeholder="Nome" style="text-align: center">
+        <input type="email" name="email" id="email" placeholder="Seu melhor Email" style="text-align: center">
+        <input type="submit" value="Enviar">
+    </form>
 </div>
 
 <footer class="footer">
