@@ -624,6 +624,7 @@ a:hover {
 /* Input de pesquisa */
 
 .input-wrapper {
+  width: 980px;
   margin-top: 75px;
   padding: 0 20px;
   background-color: rgba(0, 0, 0, 0.4);
@@ -690,6 +691,7 @@ a:hover {
 }
 
 .acervo-grid {
+  width: 980px;
   margin-top: -100px;
   display: grid;
   gap: 32px;
