@@ -85,9 +85,7 @@
 
   .input-wrapper input {
     width: 150px;
-    text-align: center;
   }
-
 
   /* Footer */
   .footer_grid {
@@ -184,20 +182,15 @@
     width: 60%;
   }
 
-  .contato-estrutura a {
-    text-align: center;
-  }
-
   /* Blog */
 
   .blog-hero {
     width: 440px;
-    grid-template-rows: none;
   }
 
   .blog-hero a {
     width: 420px;
-    grid-row: span 1;
+    grid-row: span 4;
   }
 
   .blog-hero img {
@@ -212,7 +205,6 @@
     grid-column: 1;
     /* text-align: center; */
     width: 100%;
-    margin-bottom: -150px;
   }
 
   .blog-wrapper {
@@ -237,10 +229,6 @@
     font-size: 18px;
   }
 
-  .post-blog h3 {
-    font-size: 22px;
-  }
-
   /* Post Template */
 
   .post-content-wrapper {
@@ -254,7 +242,7 @@
   }
 
   .post-content-wrapper img {
-    width: 600px;
+    width: 300px;
   }
 
   .post-content-wrapper p {
@@ -275,7 +263,7 @@
   }
 
   .hero p {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .linha {
@@ -299,7 +287,6 @@
     "blog"
     ;
     grid-template-rows: auto auto auto auto auto auto;
-    margin-left: 0px;
   }
 
   .main h3 {
@@ -455,7 +442,6 @@
   .blog-hero {
     width: 100%;
     justify-items: center;
-    grid-template-rows: 80px auto;
   }
 
   .blog-hero a {
@@ -468,7 +454,7 @@
 
   .blog-hero h2 {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 80px;
   }
 
   .blog-hero p {
@@ -477,27 +463,26 @@
 
   /* Blog content */
 
-  .post-blog {
-    margin-top: 50px;
+  .post {
     grid-template-columns: 1fr;
     justify-items: center;
   }
 
-  .post-blog a {
+  .post a {
     grid-row: span 4;
   }
 
-  .post-blog label {
+  .post label {
     grid-column: 1;
   }
 
-  .post-blog h3 {
+  .post h3 {
     grid-column: 1;
     font-size: 18px;
     margin: 0 30px;
   }
 
-  .post-blog p {
+  .post p {
     grid-column: 1;
     font-size: 14px;
     padding: 0 15px;
@@ -505,7 +490,7 @@
     margin-top: -30px;
   }
 
-  .post-blog a {
+  .post a {
     grid-column: 1;
   }
 
@@ -533,35 +518,5 @@
   .post-content-wrapper p {
     font-size: 16px;
     width: 100%;
-  }
-
-  /* Página de procura */
-
-  .search-wrapper {
-    width: 80%;
-    text-align: center;
-  }
-
-  .search-wrapper h2 {
-    font-weight: 700;
-    font-family: 'Archivo';
-    font-size: 24px;
-  }
-
-  .search-wrapper p {
-    font-family: 'Archivo';
-    font-size: 14px;
-  }
-
-  .search-wrapper article {
-    display: block;
-  }
-
-  .estrutura {
-    display: block;
-  }
-
-  hr {
-    margin-bottom: 50px;
   }
 }
