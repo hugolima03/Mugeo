@@ -28,7 +28,11 @@
                                 src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/instagram_white_icon.png"
                                 alt="Instagram Icon">
 <<<<<<< HEAD
+<<<<<<< HEAD
                             <p></p>
+=======
+                            <p>@mugeo_ufrr</p>
+>>>>>>> parent of 571e9ea... Adicionando o The Field
 =======
                             <p>@mugeo_ufrr</p>
 >>>>>>> parent of 571e9ea... Adicionando o The Field
@@ -38,8 +42,13 @@
                         <a href="https://www.facebook.com/"><img
                                 src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/facebook_white_icon.png"
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 alt="Facebook Icon">
                             <p></p>
+=======
+                                alt="Instagram Icon">
+                            <p>@mugeo_ufrr</p>
+>>>>>>> parent of 571e9ea... Adicionando o The Field
 =======
                                 alt="Instagram Icon">
                             <p>@mugeo_ufrr</p>
@@ -50,8 +59,13 @@
                         <a href="https://twitter.com/home"><img
                                 src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/twitter_white_icon.png"
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 alt="Twitter Icon">
                             <p></p>
+=======
+                                alt="Instagram Icon">
+                            <p>@mugeo_ufrr</p>
+>>>>>>> parent of 571e9ea... Adicionando o The Field
 =======
                                 alt="Instagram Icon">
                             <p>@mugeo_ufrr</p>

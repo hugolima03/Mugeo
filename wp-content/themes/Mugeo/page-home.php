@@ -10,7 +10,11 @@ get_header();
             <p>UFRR</p> <img class="linha" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_small.png"
                 alt="Linha">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <p><?php get('hero-horas'); ?></p>
+=======
+            <p>das 10:00 ás 18:00</p>
+>>>>>>> parent of 571e9ea... Adicionando o The Field
 =======
             <p>das 10:00 ás 18:00</p>
 >>>>>>> parent of 571e9ea... Adicionando o The Field
@@ -107,6 +111,7 @@ get_header();
                     </h2>
                     <p>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <?php  ?><br>
                         <?php  ?><br>
                         <?php  ?><br>
@@ -117,6 +122,8 @@ get_header();
                             <?php ?><br>
                             <?php ?>
 =======
+=======
+>>>>>>> parent of 571e9ea... Adicionando o The Field
                         Domingo<br>
                         Segunda<br>
                         Terça a Sexta-feira<br>
@@ -126,6 +133,9 @@ get_header();
                             Fechado<br>
                             10AM - 04PM<br>
                             10AM - 06PM
+<<<<<<< HEAD
+>>>>>>> parent of 571e9ea... Adicionando o The Field
+=======
 >>>>>>> parent of 571e9ea... Adicionando o The Field
                         </strong>
                     </p>
@@ -158,6 +168,7 @@ get_header();
                     <h2>Conheça nossas redes sociais</h2>
                     <p>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <?php $opcoes = get_post_custom(get_the_ID());
                             $minha_opcao = $opcoes['mugeo-email'][0];
 // o index 0 é importante, pois get_post_custom
@@ -167,11 +178,16 @@ get_header();
                         mugeo_ufrr@gmail.com<br>
                         (+420) 233 093 1230
 >>>>>>> parent of 571e9ea... Adicionando o The Field
+=======
+                        mugeo_ufrr@gmail.com<br>
+                        (+420) 233 093 1230
+>>>>>>> parent of 571e9ea... Adicionando o The Field
                     </p>
                     <ul>
                         <li>
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/insta.svg"
                                 alt="Instagram Icon" class="svg-icon">
+<<<<<<< HEAD
 <<<<<<< HEAD
                             <p><a href="#"></a></p>
                         </li>
@@ -184,6 +200,19 @@ get_header();
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/twitter.svg"
                                 alt="Twitter Icon" class="svg-icon">
                             <p><a href="#"></a></p>
+=======
+                            <p><a href="#">@mugeo_ufrr</a></p>
+                        </li>
+                        <li>
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/face.svg"
+                                alt="Instagram Icon" class="svg-icon">
+                            <p><a href="#">@mugeo_ufrr</a></p>
+                        </li>
+                        <li>
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/twitter.svg"
+                                alt="Instagram Icon" class="svg-icon">
+                            <p><a href="#">@mugeo_ufrr</a></p>
+>>>>>>> parent of 571e9ea... Adicionando o The Field
 =======
                             <p><a href="#">@mugeo_ufrr</a></p>
                         </li>
