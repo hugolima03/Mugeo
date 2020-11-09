@@ -27,63 +27,21 @@
                         <a href="https://www.instagram.com/"><img
                                 src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/instagram_white_icon.png"
                                 alt="Instagram Icon">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            <p></p>
-=======
-                            <p>@mugeo_ufrr</p>
->>>>>>> parent of 571e9ea... Adicionando o The Field
-=======
-                            <p>@mugeo_ufrr</p>
->>>>>>> parent of 571e9ea... Adicionando o The Field
-=======
-                            <p>@mugeo_ufrr</p>
->>>>>>> parent of 571e9ea... Adicionando o The Field
+                            <p><?php the_field('mugeo-instagram')?></p>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.facebook.com/"><img
                                 src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/facebook_white_icon.png"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
                                 alt="Facebook Icon">
-                            <p></p>
-=======
-                                alt="Instagram Icon">
-                            <p>@mugeo_ufrr</p>
->>>>>>> parent of 571e9ea... Adicionando o The Field
-=======
-                                alt="Instagram Icon">
-                            <p>@mugeo_ufrr</p>
->>>>>>> parent of 571e9ea... Adicionando o The Field
-=======
-                                alt="Instagram Icon">
-                            <p>@mugeo_ufrr</p>
->>>>>>> parent of 571e9ea... Adicionando o The Field
+                            <p><?php the_field('mugeo-facebook')?></p>
                         </a>
                     </li>
                     <li>
                         <a href="https://twitter.com/home"><img
                                 src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/twitter_white_icon.png"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
                                 alt="Twitter Icon">
-                            <p></p>
-=======
-                                alt="Instagram Icon">
-                            <p>@mugeo_ufrr</p>
->>>>>>> parent of 571e9ea... Adicionando o The Field
-=======
-                                alt="Instagram Icon">
-                            <p>@mugeo_ufrr</p>
->>>>>>> parent of 571e9ea... Adicionando o The Field
-=======
-                                alt="Instagram Icon">
-                            <p>@mugeo_ufrr</p>
->>>>>>> parent of 571e9ea... Adicionando o The Field
+                            <p><?php the_field('mugeo-twitter')?></p>
                         </a>
                     </li>
                 </ul>
@@ -107,7 +65,6 @@
 
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/scripts/simple-anime.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/scripts/main.js"></script>
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/scripts/filtro-acervo.js"></script>
 
 <?php wp_footer(); ?>
 </body>

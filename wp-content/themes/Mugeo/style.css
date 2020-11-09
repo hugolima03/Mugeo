@@ -61,10 +61,21 @@ Use it to make something cool, have fun, and share what you've learned with othe
   overflow: hidden;
 }
 
+/* Body de cada página */
 body {
   background: #090808 no-repeat;
   background-image: url("src/imgs/mugeo_hero.png");
   background-size: contain;
+}
+
+.contato-body {
+  background-image: url("src/imgs/contato.jpg");
+  background-size: cover;
+}
+
+.post-template-body {
+  background-image: url("src/imgs/post-template-hero2.jpg");
+  background-repeat: no-repeat;
 }
 
 /* Header */
@@ -120,7 +131,7 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
   font-family: 'Cardo', serif;
-  width: 60%;
+  width: 980px;
   height: 700px;
   color: #F1F3F8;
 }
@@ -224,6 +235,7 @@ h1 {
 .main article {
   width: 100%;
   display: grid;
+  grid-template-columns: 370px auto;
   grid-template-rows: 40px 20px 96px;
   grid-template-areas: 
   "foto article-title"
@@ -250,7 +262,7 @@ h1 {
 
 .main article h4 {
   padding-top: 10px;
-  font-size: 18px;
+  font-size: 22px;
   font-family: 'Archivo';
   line-height: 20px;
   grid-area: article-title;
@@ -273,6 +285,7 @@ h1 {
   grid-area: article-content;
   font-size: 16px;
   font-family: 'Archivo';
+  width: 400px;
 }
 
 .main article .article-button {
@@ -792,6 +805,7 @@ a:hover {
 }
 
 .slider-wrapper-blog h3 {
+  font-family: 'Archivo';
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
@@ -1005,10 +1019,6 @@ a:hover {
 
 /* Página Contato */
 
-.contato-body {
-  background-image: url("src/imgs/contato.jpg");
-}
-
 .contato-estrutura {
   grid-area: content;
   width: 940px;
@@ -1154,12 +1164,6 @@ a:hover {
   grid-template-columns: 1fr;
 }
 
-.post-template-body {
-  background-image: url("src/imgs/post-template-hero2.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 .post-template-main {
   margin-top: 400px;
   grid-area: content;
@@ -1234,6 +1238,7 @@ a:hover {
 .success-wrapper p {
   font-size: 24px;
   grid-column: 1;
+  text-align: center;
 }
 
 .success-wrapper img {
@@ -1290,4 +1295,3 @@ a:hover {
 .search-content {
   /* width: 400px; */
 }
-

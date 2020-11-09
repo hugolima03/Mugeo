@@ -3,25 +3,12 @@
 get_header(); 
 ?>
 
-
 <div class="hero">
     <div class="title">
         <div data-anime="1200">
             <p>UFRR</p> <img class="linha" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_small.png"
                 alt="Linha">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <p><?php get('hero-horas'); ?></p>
-=======
-            <p>das 10:00 ás 18:00</p>
->>>>>>> parent of 571e9ea... Adicionando o The Field
-=======
-            <p>das 10:00 ás 18:00</p>
->>>>>>> parent of 571e9ea... Adicionando o The Field
-=======
-            <p>das 10:00 ás 18:00</p>
->>>>>>> parent of 571e9ea... Adicionando o The Field
+            <p><?php the_field('hero-horas')?></p>
         </div>
         <h1 data-anime="800">Museu de<br>Geociências</h1>
         <div data-anime="1400">
@@ -114,45 +101,15 @@ get_header();
                         Horários de funcionamento
                     </h2>
                     <p>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        <?php  ?><br>
-                        <?php  ?><br>
-                        <?php  ?><br>
+                        <?php the_field('visite-dia1')?><br>
+                        <?php the_field('visite-dia2')?><br>
+                        <?php the_field('visite-dia3')?><br>
                     </p>
                     <p>
                         <strong>
-                            <?php ?><br>
-                            <?php ?><br>
-                            <?php ?>
-=======
-=======
->>>>>>> parent of 571e9ea... Adicionando o The Field
-                        Domingo<br>
-                        Segunda<br>
-                        Terça a Sexta-feira<br>
-                    </p>
-                    <p>
-                        <strong>
-                            Fechado<br>
-                            10AM - 04PM<br>
-                            10AM - 06PM
-<<<<<<< HEAD
->>>>>>> parent of 571e9ea... Adicionando o The Field
-=======
->>>>>>> parent of 571e9ea... Adicionando o The Field
-=======
-                        Domingo<br>
-                        Segunda<br>
-                        Terça a Sexta-feira<br>
-                    </p>
-                    <p>
-                        <strong>
-                            Fechado<br>
-                            10AM - 04PM<br>
-                            10AM - 06PM
->>>>>>> parent of 571e9ea... Adicionando o The Field
+                            <?php the_field('visite-hora1')?><br>
+                            <?php the_field('visite-hora2')?><br>
+                            <?php the_field('visite-hora3')?>
                         </strong>
                     </p>
                 </div>
@@ -183,84 +140,24 @@ get_header();
                 <div class="social">
                     <h2>Conheça nossas redes sociais</h2>
                     <p>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        <?php $opcoes = get_post_custom(get_the_ID());
-                            $minha_opcao = $opcoes['mugeo-email'][0];
-// o index 0 é importante, pois get_post_custom
-// retorna um array ?><br>
-                        <?php ?>
-=======
-                        mugeo_ufrr@gmail.com<br>
-                        (+420) 233 093 1230
->>>>>>> parent of 571e9ea... Adicionando o The Field
-=======
-                        mugeo_ufrr@gmail.com<br>
-                        (+420) 233 093 1230
->>>>>>> parent of 571e9ea... Adicionando o The Field
-=======
-                        mugeo_ufrr@gmail.com<br>
-                        (+420) 233 093 1230
->>>>>>> parent of 571e9ea... Adicionando o The Field
+                        <?php the_field('mugeo-email')?><br>
+                        <?php the_field('mugeo-telefone')?>
                     </p>
                     <ul>
                         <li>
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/insta.svg"
                                 alt="Instagram Icon" class="svg-icon">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            <p><a href="#"></a></p>
+                            <p><a href="#"><?php the_field('mugeo-instagram')?></a></p>
                         </li>
                         <li>
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/face.svg"
                                 alt="Facebook Icon" class="svg-icon">
-                            <p><a href="#"></a></p>
+                            <p><a href="#"><?php the_field('mugeo-facebook')?></a></p>
                         </li>
                         <li>
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/twitter.svg"
                                 alt="Twitter Icon" class="svg-icon">
-                            <p><a href="#"></a></p>
-=======
-                            <p><a href="#">@mugeo_ufrr</a></p>
-                        </li>
-                        <li>
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/face.svg"
-                                alt="Instagram Icon" class="svg-icon">
-                            <p><a href="#">@mugeo_ufrr</a></p>
-                        </li>
-                        <li>
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/twitter.svg"
-                                alt="Instagram Icon" class="svg-icon">
-                            <p><a href="#">@mugeo_ufrr</a></p>
->>>>>>> parent of 571e9ea... Adicionando o The Field
-=======
-                            <p><a href="#">@mugeo_ufrr</a></p>
-                        </li>
-                        <li>
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/face.svg"
-                                alt="Instagram Icon" class="svg-icon">
-                            <p><a href="#">@mugeo_ufrr</a></p>
-                        </li>
-                        <li>
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/twitter.svg"
-                                alt="Instagram Icon" class="svg-icon">
-                            <p><a href="#">@mugeo_ufrr</a></p>
->>>>>>> parent of 571e9ea... Adicionando o The Field
-=======
-                            <p><a href="#">@mugeo_ufrr</a></p>
-                        </li>
-                        <li>
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/face.svg"
-                                alt="Instagram Icon" class="svg-icon">
-                            <p><a href="#">@mugeo_ufrr</a></p>
-                        </li>
-                        <li>
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/twitter.svg"
-                                alt="Instagram Icon" class="svg-icon">
-                            <p><a href="#">@mugeo_ufrr</a></p>
->>>>>>> parent of 571e9ea... Adicionando o The Field
+                            <p><a href="#"><?php the_field('mugeo-twitter')?></a></p>
                         </li>
                     </ul>
                 </div>
