@@ -11,7 +11,7 @@ get_header();
             <div class="title" data-anime="800">
                 <p>UFRR</p> <img class="linha"
                     src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_small.png" alt="Linha">
-                <p><?php the_field('hero-horas')?></p>
+                <p>das 10:00 ás 18:00</p>
                 <h1>Contato</h1>
                 <a href="/home/">Museu geológico</a><img class="linha_regular"
                     src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_regular.png" alt="Linha">
@@ -21,14 +21,14 @@ get_header();
         <div class="horarioedias" data-anime="1200">
             <h3><strong>Horários e dias de funcionamento</strong></h3>
             <p>
-                <?php the_field('visite-dia1')?><br><br>
-                <?php the_field('visite-dia2')?><br><br>
-                <?php the_field('visite-dia3')?><br><br>
+                Domingo<br>
+                Segunda<br>
+                Terça a sexta-feira<br>
             </p>
             <p>
-                <?php the_field('visite-hora1')?><br>
-                <?php the_field('visite-hora2')?><br>
-                <?php the_field('visite-hora3')?><br>
+                Fechado<br>
+                10 AM - 04 PM<br>
+                10 AM - 06 PM<br>
             </p>
         </div>
 
@@ -48,11 +48,11 @@ get_header();
                 <input type="submit" value="ENVIAR"><br>
                 <div class="contato-icon">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/contato-telefone.png"
-                        alt=""><strong><span><?php the_field('mugeo-telefone')?></span></strong><br>
+                        alt=""><strong><span>95 99999-9999</span></strong><br>
                 </div>
                 <div class="contato-icon">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/contato-email.png"
-                        alt=""><span><strong><?php the_field('mugeo-email')?></strong></span>
+                        alt=""><span><strong>mugeo_ufrr@gmail.com</strong></span>
                 </div>
             </form>
         </div>
