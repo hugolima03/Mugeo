@@ -8,7 +8,7 @@ get_header();
         <div data-anime="1200">
             <p>UFRR</p> <img class="linha" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_small.png"
                 alt="Linha">
-            <p>das 10:00 ás 18:00</p>
+            <p><?php the_field('hero-horas')?></p>
         </div>
         <h1 data-anime="800">Museu de<br>Geociências</h1>
         <div data-anime="1400">
@@ -101,15 +101,15 @@ get_header();
                         Horários de funcionamento
                     </h2>
                     <p>
-                        Domingo<br>
-                        Segunda<br>
-                        Terça a Sexta-feira<br>
+                        <?php the_field('visite-dia1')?><br>
+                        <?php the_field('visite-dia2')?><br>
+                        <?php the_field('visite-dia3')?><br>
                     </p>
                     <p>
                         <strong>
-                            Fechado<br>
-                            10AM - 04PM<br>
-                            10AM - 06PM
+                            <?php the_field('visite-hora1')?><br>
+                            <?php the_field('visite-hora2')?><br>
+                            <?php the_field('visite-hora3')?>
                         </strong>
                     </p>
                 </div>
@@ -140,24 +140,24 @@ get_header();
                 <div class="social">
                     <h2>Conheça nossas redes sociais</h2>
                     <p>
-                        mugeo_ufrr@gmail.com<br>
-                        (+420) 233 093 1230
+                        <?php the_field('mugeo-email')?><br>
+                        <?php the_field('mugeo-telefone')?>
                     </p>
                     <ul>
                         <li>
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/insta.svg"
                                 alt="Instagram Icon" class="svg-icon">
-                            <p><a href="#">@mugeo_ufrr</a></p>
+                            <p><a href="#"><?php the_field('mugeo-instagram')?></a></p>
                         </li>
                         <li>
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/face.svg"
-                                alt="Instagram Icon" class="svg-icon">
-                            <p><a href="#">@mugeo_ufrr</a></p>
+                                alt="Facebook Icon" class="svg-icon">
+                            <p><a href="#"><?php the_field('mugeo-facebook')?></a></p>
                         </li>
                         <li>
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/twitter.svg"
-                                alt="Instagram Icon" class="svg-icon">
-                            <p><a href="#">@mugeo_ufrr</a></p>
+                                alt="Twitter Icon" class="svg-icon">
+                            <p><a href="#"><?php the_field('mugeo-twitter')?></a></p>
                         </li>
                     </ul>
                 </div>

@@ -3,13 +3,12 @@
 get_header(); 
 ?>
 
-
 <div class="hero">
     <div class="title_acervo">
         <div data-anime="1200">
             <p>UFRR</p> <img class="linha" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_small.png"
                 alt="Linha">
-            <p>das 10:00 ás 18:00</p>
+            <p><?php the_field('hero-horas')?></p>
         </div>
         <h1 data-anime="800">Acervo</h1>
         <div data-anime="1400">
