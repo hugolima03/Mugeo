@@ -3,12 +3,13 @@
 get_header(); 
 ?>
 
+
 <div class="hero">
     <div class="title">
         <div data-anime="1200">
             <p>UFRR</p> <img class="linha" src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/line_small.png"
                 alt="Linha">
-            <p><?php the_field('hero-horas')?></p>
+            <p><?php get('hero-horas'); ?></p>
         </div>
         <h1 data-anime="800">Museu de<br>Geociências</h1>
         <div data-anime="1400">
@@ -101,15 +102,15 @@ get_header();
                         Horários de funcionamento
                     </h2>
                     <p>
-                        <?php the_field('visite-dia1')?><br>
-                        <?php the_field('visite-dia2')?><br>
-                        <?php the_field('visite-dia3')?><br>
+                        <?php  ?><br>
+                        <?php  ?><br>
+                        <?php  ?><br>
                     </p>
                     <p>
                         <strong>
-                            <?php the_field('visite-hora1')?><br>
-                            <?php the_field('visite-hora2')?><br>
-                            <?php the_field('visite-hora3')?>
+                            <?php ?><br>
+                            <?php ?><br>
+                            <?php ?>
                         </strong>
                     </p>
                 </div>
@@ -140,24 +141,27 @@ get_header();
                 <div class="social">
                     <h2>Conheça nossas redes sociais</h2>
                     <p>
-                        <?php the_field('mugeo-email')?><br>
-                        <?php the_field('mugeo-telefone')?>
+                        <?php $opcoes = get_post_custom(get_the_ID());
+                            $minha_opcao = $opcoes['mugeo-email'][0];
+// o index 0 é importante, pois get_post_custom
+// retorna um array ?><br>
+                        <?php ?>
                     </p>
                     <ul>
                         <li>
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/insta.svg"
                                 alt="Instagram Icon" class="svg-icon">
-                            <p><a href="#"><?php the_field('mugeo-instagram')?></a></p>
+                            <p><a href="#"></a></p>
                         </li>
                         <li>
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/face.svg"
                                 alt="Facebook Icon" class="svg-icon">
-                            <p><a href="#"><?php the_field('mugeo-facebook')?></a></p>
+                            <p><a href="#"></a></p>
                         </li>
                         <li>
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/twitter.svg"
                                 alt="Twitter Icon" class="svg-icon">
-                            <p><a href="#"><?php the_field('mugeo-twitter')?></a></p>
+                            <p><a href="#"></a></p>
                         </li>
                     </ul>
                 </div>
