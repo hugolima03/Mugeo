@@ -27,21 +27,21 @@
                         <a href="https://www.instagram.com/"><img
                                 src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/instagram_white_icon.png"
                                 alt="Instagram Icon">
-                            <p><?php the_field('mugeo-instagram')?></p>
+                            <p>@mugeo_ufrr</p>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.facebook.com/"><img
                                 src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/facebook_white_icon.png"
-                                alt="Facebook Icon">
-                            <p><?php the_field('mugeo-facebook')?></p>
+                                alt="Instagram Icon">
+                            <p>@mugeo_ufrr</p>
                         </a>
                     </li>
                     <li>
                         <a href="https://twitter.com/home"><img
                                 src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/icons/twitter_white_icon.png"
-                                alt="Twitter Icon">
-                            <p><?php the_field('mugeo-twitter')?></p>
+                                alt="Instagram Icon">
+                            <p>@mugeo_ufrr</p>
                         </a>
                     </li>
                 </ul>
