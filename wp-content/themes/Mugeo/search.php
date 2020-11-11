@@ -8,10 +8,13 @@
 			
 	    	while( have_posts() ): the_post(); ?>
 			
-                <?php get_template_part('content-search'); ?>
+          <?php get_template_part('content-search'); ?>
             	
 			
-		<?php endwhile;
+        <?php endwhile;
+    
+    else :
+      echo '<h2> Desculpa, não encontrei </h2><br>';
 			
     endif;
     
