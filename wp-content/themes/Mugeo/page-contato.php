@@ -32,10 +32,13 @@ get_header();
             </p>
         </div>
 
-        <a href="https://www.google.com/maps/place/UFRR/@2.8344042,-60.6960301,17z/data=!3m1!4b1!4m5!3m4!1s0x8d93057634767323:0xe7b9d451b20cb198!8m2!3d2.8344042!4d-60.6938414"
-            target="_blank"><img class="contato-img"
-                src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/contato_mapa.png" alt="contato_mapa"
-                data-anime="1200"></a>
+        <a 
+        href="https://www.google.com/maps/place/UFRR/@2.8344042,-60.6960301,17z/data=!3m1!4b1!4m5!3m4!1s0x8d93057634767323:0xe7b9d451b20cb198!8m2!3d2.8344042!4d-60.6938414"
+        target="_blank"><img 
+        class="contato-img"
+        src="<?php echo get_stylesheet_directory_uri(); ?>/src/imgs/contato_mapa.png" alt="contato_mapa"
+        data-anime="1200"
+        ></a>
 
         <div class="contato-form" data-anime="1800">
             <form method="POST" action="<?php echo get_stylesheet_directory_uri(); ?>/formulario-contato.php">

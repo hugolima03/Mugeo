@@ -866,6 +866,10 @@ a:hover {
   grid-row: span 3;
 }
 
+.post-search img {
+  height: auto;
+}
+
 .post label {
   grid-column: 2;
   font-family: 'Archivo';
@@ -1055,7 +1059,7 @@ a:hover {
 
 .hero-contato a {
   color: #F1F3F8;
-  text-decoration: underline;
+  text-decoration: underline; 
 }
 
 .hero-contato .title {
@@ -1276,6 +1280,7 @@ a:hover {
 .search-wrapper img {
   margin: 0 auto;
   width: 150px;
+  height: auto;
   border-radius: 10px;
   grid-column: 1;
   

@@ -14,7 +14,7 @@
             	<?php the_excerpt(); ?>
         </div>
     	
-    	<hr>
+    	
     
     </article>
 
