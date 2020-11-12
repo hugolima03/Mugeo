@@ -6,7 +6,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/src/favicon.png" type="image/x-icon">
+    <title>Mugeo - Museu geológico da UFRR</title>
     <style>
         body {
             background-color: #1E1D18;
@@ -30,6 +31,7 @@
         .success-wrapper p {
             font-size: 24px;
             grid-column: 1;
+            text-align: center;
         }
 
         .success-wrapper img {

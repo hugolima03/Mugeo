@@ -277,6 +277,7 @@
   }
 
   .main article {
+    margin-left: 0;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "foto"
@@ -297,8 +298,12 @@
     padding-bottom: 30px;
   }
 
+  .main article a {
+    font-size: 20px;
+  }
+
   .main article a img {
-    width: 100%;
+    width: 250px;
     margin-left: 0px;
   }
 
@@ -308,7 +313,7 @@
 
   .main .article-content {
     margin: 10px 0 10px 0;
-    
+    width: 250px;
   }
 
   /* Planeje sua visita */
@@ -357,6 +362,7 @@
   .input-wrapper {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10px 1fr;
     grid-template-areas: 
     "colecao"
     "nome"
@@ -364,14 +370,23 @@
     ;
   }
 
+  .input-wrapper p {
+    font-size: 18px;
+    width: 200px;
+    margin: 0 auto;
+  }
+
   .input-wrapper input {
+    text-align: center;
     margin: 0 auto;
   }
 
   .input-wrapper {
+    margin: 0 auto;
     margin-top: 25px;
+    width: 250px;
     height: 300px;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
   }
 
   .input-wrapper button {
@@ -379,6 +394,7 @@
   }
 
   .hero {
+    width: 100vw;
     height: 100%;
     padding-bottom: 100px;
   }
@@ -441,6 +457,7 @@
 
   .blog-hero {
     width: 100%;
+    height: 250px;
     justify-items: center;
   }
 
@@ -454,7 +471,6 @@
 
   .blog-hero h2 {
     text-align: center;
-    margin-top: 80px;
   }
 
   .blog-hero p {
@@ -519,4 +535,6 @@
     font-size: 16px;
     width: 100%;
   }
+
+  
 }
