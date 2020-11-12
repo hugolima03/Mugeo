@@ -22,7 +22,9 @@ get_header();
         <p>Selecionar categoria: <a href="/category/rochas/">Rochas</a> ou <a href="/category/minerais/">Minerais</a>
         </p>
         
-        <?php get_template_part('custom-search-form-acervo'); ?>
+        <div class="acervo-input-search">
+            <?php get_template_part('custom-search-form-acervo'); ?>
+        </div>
     </div>
 </div>
 
